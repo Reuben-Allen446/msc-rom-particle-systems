@@ -1,0 +1,3 @@
+benchmark,number_of_parameters,number_of_repetitions,median_time_ms,mean_time_ms,percentile_95_time_ms,median_time_per_parameter_ms
+single_parameter_three_fields,1,500,0.8543855001335032,0.9767268058203626,1.5810600438271647,0.8543855001335032
+dense_201_parameter_sweep,201,10,25.310296507086605,27.056500702747144,35.34379375487332,0.12592187316958509
