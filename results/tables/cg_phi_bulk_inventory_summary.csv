@@ -1,0 +1,2 @@
+number_of_simulations,grid_points_per_field,number_of_x_points,number_of_z_points,parameter_minimum,parameter_maximum,mean_bulk_integrated_volume,mean_small_integrated_volume,mean_large_integrated_volume,minimum_large_value,explicit_large_validation_passed,minimum_overlap_fraction,maximum_centre_separation,processed_file_size_mb
+100,10000,100,100,1.0,2.0,565.5456856989535,282.7581601180114,282.78752558094214,0.0,True,0.42381466632018117,1.632227966877316,8.534093856811523

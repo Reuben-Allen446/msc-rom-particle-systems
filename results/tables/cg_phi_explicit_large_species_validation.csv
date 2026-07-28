@@ -1,0 +1,2 @@
+filename,size_ratio,simulation_number,maximum_grid_difference,mean_absolute_field_difference,maximum_absolute_field_difference,relative_field_error,explicit_integrated_volume,inferred_integrated_volume
+rotating_drum_bidisperse_size_ratio_1_808081_num_81.largeSpecies.stat,1.808081,81,0.0,8.589508506216344e-08,1.0000000000842668e-06,1.6743315362737763e-06,282.74459632629953,282.7446046727154
