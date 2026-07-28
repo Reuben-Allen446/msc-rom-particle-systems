@@ -1,0 +1,4 @@
+strategy,first_modelled_field,second_modelled_field,derived_field,mean_training_cv_error,sum_training_cv_error
+bulk_small_derive_large,bulk,small,large,0.006442011966054447,0.012884023932108893
+bulk_large_derive_small,bulk,large,small,0.006934592435397875,0.01386918487079575
+small_large_derive_bulk,small,large,bulk,0.009712450271646245,0.01942490054329249
