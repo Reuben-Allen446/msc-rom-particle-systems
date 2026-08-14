@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "notebook": "10_particle_snapshot_construction.ipynb",
+  "raw_source": {
+    "relative_path": "data/raw/particle_dem/pilot_size_ratio_1_000000_num_1/rotating_drum_bidisperse_size_ratio_1_000000_num_1.data",
+    "size_bytes": 2076613186,
+    "sha256": "fd87e34f1cff220d97730309e823deed5ab4b3d711bf60a6db889eaa686f9b3f"
+  },
+  "compact_artifact": {
+    "relative_path": "data/interim/particle_positions_ratio_1_000000_num_1.npz",
+    "size_bytes": 50286898,
+    "sha256": "97bddffd33e2bcf8f6863cf29d5f82f5268c9a225bdac3f4399ca4704db3a9a1",
+    "exact_round_trip_validated": true,
+    "git_ignored": true
+  },
+  "snapshot_selection": {
+    "available_snapshot_count": 1002,
+    "stationary_threshold": 1377.0,
+    "selected_snapshot_count": 201,
+    "first_selected_time": 1378.133363,
+    "final_selected_time": 1720.721256
+  },
+  "particle_representation": {
+    "tensor_order": [
+      "snapshot",
+      "particle_row",
+      "coordinate"
+    ],
+    "coordinate_order": [
+      "x",
+      "y",
+      "z"
+    ],
+    "tensor_shape": [
+      201,
+      10792,
+      3
+    ],
+    "xyz_pod_matrix_shape": [
+      32376,
+      201
+    ],
+    "xz_pod_matrix_shape": [
+      21584,
+      201
+    ],
+    "dtype": "float64",
+    "particle_count": 10792,
+    "particle_data_columns": [
+      "x",
+      "y",
+      "z",
+      "vx",
+      "vy",
+      "vz",
+      "radius",
+      "rotation_1",
+      "rotation_2",
+      "rotation_3",
+      "omega_x",
+      "omega_y",
+      "omega_z",
+      "species_index"
+    ],
+    "explicit_particle_ids_in_data_file": false,
+    "radii_constant_across_selected_snapshots": true,
+    "species_sequence_constant_across_selected_snapshots": true
+  },
+  "centred_fluctuation": {
+    "centering": "per-particle temporal mean",
+    "x_fraction": 0.44241768396809444,
+    "y_fraction": 0.00400750270864534,
+    "z_fraction": 0.5535748133232602,
+    "xz_fraction": 0.9959924972913546
+  },
+  "physical_cycle_split": {
+    "drum_angular_speed": 0.0365148371670111,
+    "drum_period": 172.07211628636415,
+    "observed_revolutions": 1.9909553063778322,
+    "cycle_boundary_time": 1550.2054792863642,
+    "cycle_one_snapshot_count": 101,
+    "cycle_two_snapshot_count": 100
+  },
+  "limitations": [
+    "The DEM data rows do not contain explicit particle IDs; within-run correspondence is supported by constant radius and species sequences and the final restart comparison.",
+    "Particle correspondence between different simulations or size ratios has not been established.",
+    "The physical-cycle split assesses temporal repeatability, not generalisation to an unseen size ratio."
+  ]
+}
