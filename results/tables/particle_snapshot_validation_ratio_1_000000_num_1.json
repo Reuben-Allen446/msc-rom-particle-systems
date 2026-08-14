@@ -1,0 +1,14 @@
+{
+  "source_file": "rotating_drum_bidisperse_size_ratio_1_000000_num_1.data",
+  "source_size_bytes": 2076613186,
+  "snapshot_count": 1002,
+  "particle_count": 10792,
+  "first_time": 0.0,
+  "final_time": 1720.721256,
+  "timestamps_match_energy": true,
+  "sampled_ordering_checks": 11,
+  "all_sampled_radius_sequences_identical": true,
+  "all_sampled_species_sequences_identical": true,
+  "stationary_threshold": 1377.0,
+  "stationary_snapshot_count": 201
+}
