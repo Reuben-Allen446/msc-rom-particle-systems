@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "case": {
+    "case_id": "ratio_1_252525_num_26",
+    "size_ratio": 1.252525,
+    "simulation_number": 26,
+    "particle_count": 11626,
+    "small_particle_count": 7701,
+    "training_snapshot_count": 101,
+    "validation_snapshot_count": 99
+  },
+  "configuration": {
+    "ranks": [
+      0,
+      8,
+      14,
+      27,
+      100
+    ],
+    "stationary_time_min": 1377.0,
+    "comparison_time_max": 1720.72,
+    "small_species": 1,
+    "lucy_cutoff": 3.0,
+    "axial_averaging_length": 10.0
+  },
+  "validation": {
+    "continuum_numerical_rank": 100,
+    "particle_numerical_rank": 100,
+    "natural_cycle_error_percent": 1.710207883809089,
+    "compact_artifact_sha256": "cab3455fb1ba5474e61e5da89b8d7896abbb21490a0720e3b9788b7aeb67ee4d"
+  },
+  "rank_100_average": [
+    {
+      "case_id": "ratio_1_252525_num_26",
+      "size_ratio": 1.252525,
+      "simulation_number": 26,
+      "particle_count": 11626,
+      "small_particle_count": 7701,
+      "training_snapshot_count": 101,
+      "validation_snapshot_count": 99,
+      "field": "CG then POD",
+      "rank": 100,
+      "relative_l2_error_percent": 1.4500506224,
+      "normalised_l1_error_percent": 1.2882851588,
+      "active_bed_rmse": 0.0034108092,
+      "correlation": 0.9998667342,
+      "field_integral": 282.7565433173,
+      "integral_error_percent": 3.0706e-06,
+      "field_centroid_error": 0.0128879155,
+      "maximum_volume_fraction": 0.4854375369,
+      "grid_fraction_phi_gt_one_percent": 0.0,
+      "route": "CG then POD",
+      "error_multiple_of_cycle_variation": 0.8478797438,
+      "maximum_over_true_maximum": 1.0171666401,
+      "minimum_volume_fraction": -4.6127e-06,
+      "grid_fraction_phi_lt_zero_percent": 1.04
+    },
+    {
+      "case_id": "ratio_1_252525_num_26",
+      "size_ratio": 1.252525,
+      "simulation_number": 26,
+      "particle_count": 11626,
+      "small_particle_count": 7701,
+      "training_snapshot_count": 101,
+      "validation_snapshot_count": 99,
+      "field": "Particle POD then CG",
+      "rank": 100,
+      "relative_l2_error_percent": 81.6264141094,
+      "normalised_l1_error_percent": 58.0774448554,
+      "active_bed_rmse": 0.1920450566,
+      "correlation": 0.8281863906,
+      "field_integral": 281.8260890702,
+      "integral_error_percent": -0.3290624444,
+      "field_centroid_error": 0.0474927783,
+      "maximum_volume_fraction": 1.6255636089,
+      "grid_fraction_phi_gt_one_percent": 1.08,
+      "route": "Particle POD then CG",
+      "error_multiple_of_cycle_variation": 47.7289427105,
+      "maximum_over_true_maximum": 3.4061417766,
+      "minimum_volume_fraction": 0.0,
+      "grid_fraction_phi_lt_zero_percent": 0.0
+    }
+  ],
+  "rank_100_time_resolved": [
+    {
+      "case_id": "ratio_1_252525_num_26",
+      "size_ratio": 1.252525,
+      "simulation_number": 26,
+      "particle_count": 11626,
+      "small_particle_count": 7701,
+      "training_snapshot_count": 101,
+      "validation_snapshot_count": 99,
+      "route": "CG then POD",
+      "rank": 100,
+      "spacetime_relative_l2_error_percent": 7.516578076,
+      "mean_snapshot_l2_error_percent": 7.5093116273,
+      "median_snapshot_l2_error_percent": 7.5267958762,
+      "p95_snapshot_l2_error_percent": 8.0167974362,
+      "maximum_snapshot_l2_error_percent": 8.2080331608,
+      "mean_spatial_correlation": 0.9963301105,
+      "minimum_spatial_correlation": 0.9956182988,
+      "time_averaged_l2_error_percent": 1.4500506224,
+      "mean_absolute_integral_error_percent": 3.54534e-05,
+      "maximum_volume_fraction": 0.5152188287,
+      "minimum_volume_fraction": -0.0065045271,
+      "grid_time_fraction_phi_gt_one_percent": 0.0,
+      "grid_time_fraction_phi_lt_tolerance_percent": 1.0343434343,
+      "average_field_consistency_percent": 0.0
+    },
+    {
+      "case_id": "ratio_1_252525_num_26",
+      "size_ratio": 1.252525,
+      "simulation_number": 26,
+      "particle_count": 11626,
+      "small_particle_count": 7701,
+      "training_snapshot_count": 101,
+      "validation_snapshot_count": 99,
+      "route": "Particle POD then CG",
+      "rank": 100,
+      "spacetime_relative_l2_error_percent": 105.7097314578,
+      "mean_snapshot_l2_error_percent": 96.1802866441,
+      "median_snapshot_l2_error_percent": 76.6079581153,
+      "p95_snapshot_l2_error_percent": 167.4484905789,
+      "maximum_snapshot_l2_error_percent": 175.6981259918,
+      "mean_spatial_correlation": 0.7867486056,
+      "minimum_spatial_correlation": 0.6167548033,
+      "time_averaged_l2_error_percent": 81.6264141094,
+      "mean_absolute_integral_error_percent": 0.3290654813,
+      "maximum_volume_fraction": 3.8699606935,
+      "minimum_volume_fraction": 0.0,
+      "grid_time_fraction_phi_gt_one_percent": 0.9761616162,
+      "grid_time_fraction_phi_lt_tolerance_percent": 0.0,
+      "average_field_consistency_percent": 0.0
+    }
+  ],
+  "outputs": {
+    "average": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_average_ratio_1_252525_num_26.csv",
+      "sha256": "6c2e574d58752066046ff64b4f62a8898e46514a3c8f5c27a6943587a7a36980"
+    },
+    "time_resolved": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_time_resolved_ratio_1_252525_num_26.csv",
+      "sha256": "e306da7ca65906b8e1796ad08da8f5d10452b795766d25bd82d9c724406bd5ea"
+    },
+    "energy": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_energy_ratio_1_252525_num_26.csv",
+      "sha256": "3db1f87ceed4c561468be7acf7df02d1cc6a8d6a889a3db5a11623881d8cdbf5"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "notebook": "12_multi_parameter_route_order.ipynb",
+  "experiment": {
+    "case_count": 5,
+    "size_ratios": [
+      1.0,
+      1.252525,
+      1.494949,
+      1.747475,
+      2.0
+    ],
+    "ranks": [
+      0,
+      8,
+      14,
+      27,
+      100
+    ],
+    "training_snapshots_per_case": 101,
+    "validation_snapshots_per_case": 99,
+    "comparison_time_max": 1720.72,
+    "particle_representation": "labelled XYZ coordinates",
+    "continuum_representation": "small-species XZ volume fraction"
+  },
+  "pilot_regression": {
+    "maximum_average_table_difference": 1.1368683772161603e-13,
+    "maximum_time_table_difference": 1.5218430817930245e-13
+  },
+  "descriptive_rank_100_trends": {
+    "continuum_error_strictly_decreases": true,
+    "particle_error_strictly_increases": true,
+    "error_ratio_strictly_increases": true,
+    "continuum_error_range_percent": [
+      4.556878570587827,
+      9.04242063358271
+    ],
+    "particle_error_range_percent": [
+      94.76122134959655,
+      144.19937615496386
+    ],
+    "particle_to_continuum_error_ratio_range": [
+      10.479629867876548,
+      31.644331513613817
+    ]
+  },
+  "case_manifests": {
+    "ratio_1_000000_num_1": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_1_000000_num_1.json",
+      "sha256": "e8a549340002031a28608d56746feb4e2560591a8a4c4fd804f753a377de1a70"
+    },
+    "ratio_1_252525_num_26": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_1_252525_num_26.json",
+      "sha256": "4cfab7e41e45ae0456259aeed31b8c30a0ea260eae3d22488fe8290bd4855636"
+    },
+    "ratio_1_494949_num_50": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_1_494949_num_50.json",
+      "sha256": "520ba034fed7aa2235bbecf54648e66d442c7625272c1313140f019f2aaec517"
+    },
+    "ratio_1_747475_num_75": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_1_747475_num_75.json",
+      "sha256": "db9f1af074ec325d7469925ff2b1fe86e639abe033029ad7367aa8da5eca30c2"
+    },
+    "ratio_2_000000_num_100": {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_2_000000_num_100.json",
+      "sha256": "bd07569c8215a5a12e34b3eb22125dceb6f824b8fe700fda7ea4f11ae79ecdf9"
+    }
+  },
+  "aggregate_artifacts": {
+    "master_average_csv": {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_average_all_cases.csv",
+      "sha256": "c0a44fbd400bd2e30c5876998dfac837370e40e79f806a9463712bf77f304c9b"
+    },
+    "master_time_csv": {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_time_resolved_all_cases.csv",
+      "sha256": "733dbbde73c2004c46fd0ef4878a1138ab94e5e33e987ec04207bfde90f520a6"
+    },
+    "master_energy_csv": {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_energy_all_cases.csv",
+      "sha256": "a39c3d4aac7d9f47afc86991bbb844e0f196c6489de28958c3060cf446c3265c"
+    },
+    "rank_100_summary_csv": {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_rank_100_summary.csv",
+      "sha256": "f14d3cd24d46d5edde5bd16ce54473b1ed858ded7329bdfc84b144320178a3b3"
+    },
+    "rank_ratio_csv": {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_error_ratio_by_rank.csv",
+      "sha256": "029f5267cd661d0b28353916a72a2fe671c239298a19f95e7bbac543387ca025"
+    },
+    "rank_aggregate_csv": {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_rank_aggregate_summary.csv",
+      "sha256": "7c8beda3937793372bef2bd2955bd23299cadfbb71b6593c0210d5ba24f8da41"
+    },
+    "physical_summary_csv": {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_rank_100_physical_summary.csv",
+      "sha256": "ea57f0834edc30962f0663fee0c132b4e029e5fc99e020d4ebd9decd1db4ca7c"
+    },
+    "rank_error_figure_pdf": {
+      "relative_path": "results/figures/multi_parameter_route_order/multi_parameter_route_order_error_by_rank.pdf",
+      "sha256": "b91feb3c0e2b4e577741196861efcca00ef3841bc314a3c95366644d7e3d9b44"
+    },
+    "rank_error_figure_png": {
+      "relative_path": "results/figures/multi_parameter_route_order/multi_parameter_route_order_error_by_rank.png",
+      "sha256": "024be130f57e6866a4c1ee0c1760ba3bf75fd2e8aa3095e62f8dca88fe43af83"
+    },
+    "rank_100_trend_figure_pdf": {
+      "relative_path": "results/figures/multi_parameter_route_order/multi_parameter_rank_100_parameter_trend.pdf",
+      "sha256": "daeebe8dd70c61a51861cd27a7dda561020e2ff51eca29b71bd9359aa6d004d4"
+    },
+    "rank_100_trend_figure_png": {
+      "relative_path": "results/figures/multi_parameter_route_order/multi_parameter_rank_100_parameter_trend.png",
+      "sha256": "ac484fb2aafd09d320af9e29a3ccd85740046db482b4bde88df3767bbb98db38"
+    },
+    "physical_figure_pdf": {
+      "relative_path": "results/figures/multi_parameter_route_order/multi_parameter_rank_100_physical_diagnostics.pdf",
+      "sha256": "f9974bf8874c37b4f113e7dbcae6c990f4165fe0762ef1f2eda427ec841172c1"
+    },
+    "physical_figure_png": {
+      "relative_path": "results/figures/multi_parameter_route_order/multi_parameter_rank_100_physical_diagnostics.png",
+      "sha256": "5cf566b2c74370355694a5525cf23a523412100a130db877c7e27df1850a3323"
+    }
+  }
+}
