@@ -1,0 +1,3 @@
+protocol,selected_seed,mean_test_error_percent,median_test_error_percent,maximum_test_error_percent,mean_absolute_integral_error_percent,minimum_prediction,maximum_prediction
+Raw coefficients (draft-faithful primary),11,0.8566890293357929,0.8205692395927172,1.438286223231937,0.010694436320552263,-3.0153058557353766e-06,0.5380115276627577
+Per-mode standardised coefficients (conditioning sensitivity),47,0.9532117618658301,0.8314221831457639,1.7018727543745327,0.23976881044378606,-5.749925798377973e-06,0.5400188086320252

@@ -1,0 +1,9 @@
+formulation,relative_tail_target_percent,smallest_rank
+Paper-style uncentred POD,1.0,3
+Paper-style uncentred POD,0.5,7
+Paper-style uncentred POD,0.1,57
+Paper-style uncentred POD,0.05,80
+Mean-centred POD,1.0,38
+Mean-centred POD,0.5,66
+Mean-centred POD,0.1,96
+Mean-centred POD,0.05,98

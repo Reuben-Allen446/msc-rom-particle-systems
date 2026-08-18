@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "notebook": "14_exact_paper_method_reproduction.ipynb",
+  "python_version": "3.12.1",
+  "numpy_version": "1.26.4",
+  "pandas_version": "3.0.3",
+  "scikit_learn_version": "1.9.0",
+  "pytorch_version": "2.2.2",
+  "dataset": {
+    "relative_path": "data/processed/cg_phi_small_dataset.npz",
+    "sha256": "6915b428fee927d6ed3beecc4b5947bad0eb4895ee2b59d5ddaa086b4af11e56",
+    "training_cases": 100,
+    "external_test_cases": 10
+  },
+  "paper_interpretation": {
+    "pod_formulation": "uncentred",
+    "paper_prescribed_rank": 15,
+    "network_hidden_layers": 2,
+    "hidden_width_rule": "3 * (parameter_dimension + rank)",
+    "activation": "tanh",
+    "optimiser": "PyTorch L-BFGS",
+    "coefficient_scaling_primary": "none",
+    "coefficient_scaling_sensitivity": "per-mode standardisation",
+    "draft_ambiguities": [
+      "Numerical POD epsilon not reported",
+      "Coefficient scaling not reported",
+      "MSE stopping threshold not reported",
+      "Random seeds not reported",
+      "Exact main validation split not reported"
+    ]
+  },
+  "training_design": {
+    "fitting_cases": 90,
+    "validation_cases": 10,
+    "split_seed": 20260818,
+    "restart_seeds": [
+      11,
+      23,
+      47,
+      83,
+      131
+    ],
+    "sweep_restart_seeds": [
+      11,
+      47,
+      131
+    ],
+    "sweep_ranks": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      10,
+      15,
+      20
+    ],
+    "sweep_training_counts": [
+      10,
+      20,
+      90
+    ],
+    "external_test_used_for_selection": false
+  },
+  "final_results": [
+    {
+      "model": "rank_4_rom",
+      "rank": 4,
+      "mean_test_error_percent": 0.9273374184,
+      "median_test_error_percent": 0.8159959832,
+      "maximum_test_error_percent": 1.5276198299,
+      "mean_projection_error_percent": 0.629562029,
+      "mean_spatial_correlation": 0.9999435783,
+      "mean_absolute_integral_error_percent": 0.0028928686,
+      "minimum_prediction": -1.5987e-06,
+      "maximum_prediction": 0.5375315099,
+      "fraction_phi_lt_negative_tolerance_percent": 0.0,
+      "fraction_phi_gt_one_percent": 0.0
+    },
+    {
+      "model": "rank_6_rom",
+      "rank": 6,
+      "mean_test_error_percent": 0.8392984711,
+      "median_test_error_percent": 0.8058004145,
+      "maximum_test_error_percent": 1.3041642704,
+      "mean_projection_error_percent": 0.5333208528,
+      "mean_spatial_correlation": 0.9999522565,
+      "mean_absolute_integral_error_percent": 0.0028772587,
+      "minimum_prediction": -1.2011e-06,
+      "maximum_prediction": 0.5374356459,
+      "fraction_phi_lt_negative_tolerance_percent": 0.0,
+      "fraction_phi_gt_one_percent": 0.0
+    },
+    {
+      "model": "validation_selected_rank",
+      "rank": 6,
+      "mean_test_error_percent": 0.8578501575,
+      "median_test_error_percent": 0.8143109729,
+      "maximum_test_error_percent": 1.3285039209,
+      "mean_projection_error_percent": 0.5333208528,
+      "mean_spatial_correlation": 0.9999502771,
+      "mean_absolute_integral_error_percent": 0.0092682641,
+      "minimum_prediction": -1.3298e-06,
+      "maximum_prediction": 0.5376565214,
+      "fraction_phi_lt_negative_tolerance_percent": 0.0,
+      "fraction_phi_gt_one_percent": 0.0
+    },
+    {
+      "model": "paper_rank15",
+      "rank": 15,
+      "mean_test_error_percent": 0.8598677038,
+      "median_test_error_percent": 0.8254669535,
+      "maximum_test_error_percent": 1.4498644901,
+      "mean_projection_error_percent": 0.361168302,
+      "mean_spatial_correlation": 0.9999490389,
+      "mean_absolute_integral_error_percent": 0.0130179005,
+      "minimum_prediction": -3.3291e-06,
+      "maximum_prediction": 0.5380274272,
+      "fraction_phi_lt_negative_tolerance_percent": 0.0,
+      "fraction_phi_gt_one_percent": 0.0
+    }
+  ],
+  "artifacts": [
+    {
+      "relative_path": "data/processed/cg_phi_paper_rank15_uncentred_raw.pt",
+      "size_bytes": 1554700,
+      "sha256": "571c12493edd5782859f617316badd4b58402b2b06a90e6d03fddccf6baea516"
+    },
+    {
+      "relative_path": "data/processed/cg_phi_validation_selected_rank_uncentred_raw.pt",
+      "size_bytes": 623748,
+      "sha256": "df716ccd732b88e67a73eec7873d33ba5efb9c9b5bc7ca30aec2fe99f1edacf7"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/centred_uncentred_pod_diagnostics.pdf",
+      "size_bytes": 30513,
+      "sha256": "f61cfdfc2f26b1232f70db3e54fd4e244f280feb8d75db082ca8549c6518594b"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/centred_uncentred_pod_diagnostics.png",
+      "size_bytes": 375029,
+      "sha256": "9a2b2dea0a91ff02459e560ef06ae5fff12ba9763ff51b2424b4f7380faf11ab"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/coefficient_scaling_sensitivity.pdf",
+      "size_bytes": 23604,
+      "sha256": "bd82c12ea10742cc6434a07c6ea35ee1ad518c2ad9777e7e5785fb1918798921"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/coefficient_scaling_sensitivity.png",
+      "size_bytes": 261128,
+      "sha256": "d2723018e672eb1760237dfe89e9d536bbc69246f6e9e27bfcf6def6f275a1cf"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/final_continuum_rom_comparison.pdf",
+      "size_bytes": 24759,
+      "sha256": "1d0b1f0a06b8c9f6b192bae3fab4228311677d11db5518e8d0bf7c84a8b4dc0a"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/final_continuum_rom_comparison.png",
+      "size_bytes": 341575,
+      "sha256": "d0aec4258398a0e724dbc50f34c252558ec5ce58be06e6809af4776d0614ff2e"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/paper_rank_training_size_study.pdf",
+      "size_bytes": 20704,
+      "sha256": "8a2b6f1d627aa5984b43bad2a52acb6ee38738a4cf67683c0096ab455ebb90f7"
+    },
+    {
+      "relative_path": "results/figures/exact_paper_method_reproduction/paper_rank_training_size_study.png",
+      "size_bytes": 161158,
+      "sha256": "bb0aaa027bcc258ff48c8429d5ddb8032bc58b6281b4444bbe6fbd155a66bc51"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/centred_uncentred_projection_errors.csv",
+      "size_bytes": 2785,
+      "sha256": "16081ced91433fb8c2d120e46503acc182cf2a2f136e063601ee6260105fc980"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/centred_uncentred_tail_diagnostics.csv",
+      "size_bytes": 2152,
+      "sha256": "bb4fc1019fe7877658f8e6f309f8c39c33d3a6b874fb04ca4ce0ab1227f7e430"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/coefficient_scaling_mode_errors.csv",
+      "size_bytes": 665,
+      "sha256": "922c797905575a608a5667de7ce74433312929346504a14bc0acb2fccbf3421d"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/coefficient_scaling_summary.csv",
+      "size_bytes": 524,
+      "sha256": "12382a95743fb673e430eb80aaa5885d7907c794a43502d802c45c51bf35eb3d"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/coefficient_scaling_test_cases.csv",
+      "size_bytes": 1228,
+      "sha256": "75cabf5f67782eb011b1212cef5d911a68f2e8637869fc022919c3a43b3d5007"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/final_continuum_rom_comparison.csv",
+      "size_bytes": 1022,
+      "sha256": "5ed41a23ddd2a10de7f9526f595ee72e3019a5c7eeb76f29c624a50f1a55d30c"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/final_continuum_rom_test_cases.csv",
+      "size_bytes": 1625,
+      "sha256": "7b8e495ed1b8197ef2033d9ed3d52d41e5d4ce7990828cd05353fa2d671fce31"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/final_model_repeatability.csv",
+      "size_bytes": 581,
+      "sha256": "5eb808948b11dcdc741ea5629d0d40d8225395264197ff9deb51a50814e037c0"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/paper_rank_training_external_errors.csv",
+      "size_bytes": 3154,
+      "sha256": "92555176327f0d65d1d13f78c88d150ff701f74dc7cd72761c3ddcd3e85ca4a0"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/paper_rank_training_restart_results.csv",
+      "size_bytes": 6911,
+      "sha256": "211c92624b181c5b944c4967fcd95ea7d545254951e2dfc058b2bb9c056d3358"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/paper_rank_training_selected_models.csv",
+      "size_bytes": 2619,
+      "sha256": "2b00575f85373755d66a220d30d91908029007056c34eddc4fe424d31b367367"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/raw_coefficient_restart_comparison.csv",
+      "size_bytes": 910,
+      "sha256": "aff6eff2da9101b929d5265e36b05509e67c2a0b354aea86ee2e4a6f4af1cf94"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/relative_tail_rank_criteria.csv",
+      "size_bytes": 283,
+      "sha256": "09d2e4106eceaba502430081d5b0170d1c09e3c62682be86f2e000744dffa2d7"
+    }
+  ]
+}
