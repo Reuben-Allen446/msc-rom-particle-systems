@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "notebook": "13_xz_particle_representation_sensitivity.ipynb",
+  "case": {
+    "case_id": "ratio_1_494949_num_50",
+    "size_ratio": 1.494949,
+    "simulation_number": 50,
+    "particle_count": 13599,
+    "small_particle_count": 10462,
+    "training_snapshot_count": 101,
+    "validation_snapshot_count": 99
+  },
+  "experiment": {
+    "particle_representation": "labelled XZ coordinates",
+    "comparison": "saved XYZ and continuum-first results",
+    "validation_type": "blocked cycle-2 oracle projection"
+  },
+  "configuration": {
+    "ranks": [
+      0,
+      8,
+      14,
+      27,
+      100
+    ],
+    "stationary_time_min": 1377.0,
+    "comparison_time_max": 1720.72,
+    "small_species": 1,
+    "lucy_cutoff": 3.0,
+    "axial_averaging_length": 10.0,
+    "grid_shape": [
+      100,
+      100
+    ]
+  },
+  "validation": {
+    "xz_numerical_rank": 100,
+    "natural_cycle_error_percent": 1.3962119869096639,
+    "compact_artifact_sha256": "298993f2ce1979ed7d0e419ac1e9a2f605649fc3e2f02449ae933e84f3fdf4d7"
+  },
+  "rank_100": {
+    "field": [
+      {
+        "case_id": "ratio_1_494949_num_50",
+        "size_ratio": 1.494949,
+        "simulation_number": 50,
+        "particle_count": 13599,
+        "small_particle_count": 10462,
+        "training_snapshot_count": 101,
+        "validation_snapshot_count": 99,
+        "route": "Particle XZ POD then CG",
+        "rank": 100,
+        "spacetime_relative_l2_error_percent": 123.8000941866,
+        "mean_snapshot_l2_error_percent": 110.67507693,
+        "median_snapshot_l2_error_percent": 88.5819099718,
+        "p95_snapshot_l2_error_percent": 204.8764703004,
+        "maximum_snapshot_l2_error_percent": 210.330413442,
+        "mean_spatial_correlation": 0.7634497622,
+        "minimum_spatial_correlation": 0.5548955135,
+        "time_averaged_l2_error_percent": 95.4587012371,
+        "mean_absolute_integral_error_percent": 0.2933328155,
+        "maximum_volume_fraction": 5.0658295239,
+        "minimum_volume_fraction": 0.0,
+        "grid_time_fraction_phi_gt_one_percent": 1.3349494949,
+        "grid_time_fraction_phi_lt_tolerance_percent": 0.0
+      }
+    ],
+    "particle": [
+      {
+        "case_id": "ratio_1_494949_num_50",
+        "size_ratio": 1.494949,
+        "simulation_number": 50,
+        "particle_count": 13599,
+        "small_particle_count": 10462,
+        "training_snapshot_count": 101,
+        "validation_snapshot_count": 99,
+        "rank": 100,
+        "relative_validation_fluctuation_error_percent": 71.2565376007,
+        "mean_particle_xz_rmse": 10.2633439514,
+        "median_particle_xz_rmse": 10.1621902597,
+        "p95_particle_xz_rmse": 13.0529800046,
+        "maximum_particle_xz_rmse": 13.1162293014
+      }
+    ]
+  },
+  "outputs": {
+    "field": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_field_ratio_1_494949_num_50.csv",
+      "sha256": "df6690d5044afac6bbf3e6fd28c45de52da891ec469cd4e482cbf7bc2fe557d3"
+    },
+    "particle": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_particle_ratio_1_494949_num_50.csv",
+      "sha256": "fa7743917d62236ff80fa9864d48558e8458f170c265df64553b670797c176f5"
+    },
+    "energy": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_energy_ratio_1_494949_num_50.csv",
+      "sha256": "ad470583946ea1ecd617dbace95a2ea001165908eccece429586c5fd05ae7985"
+    }
+  }
+}

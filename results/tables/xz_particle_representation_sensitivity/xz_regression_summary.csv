@@ -1,0 +1,6 @@
+case_id,size_ratio,maximum_rank_zero_difference,natural_cycle_error_difference
+ratio_1_000000_num_1,1.0,0.0,0.0
+ratio_1_252525_num_26,1.252525,0.0,0.0
+ratio_1_494949_num_50,1.494949,0.0,0.0
+ratio_1_747475_num_75,1.747475,0.0,0.0
+ratio_2_000000_num_100,2.0,0.0,0.0

@@ -1,0 +1,6 @@
+case_id,size_ratio,simulation_number,particle_count,small_particle_count,training_snapshot_count,validation_snapshot_count,rank,xz_training_energy_percent
+ratio_1_000000_num_1,1.0,1,10792,5396,101,99,0,0.0
+ratio_1_000000_num_1,1.0,1,10792,5396,101,99,8,96.03476167206948
+ratio_1_000000_num_1,1.0,1,10792,5396,101,99,14,99.12363981552251
+ratio_1_000000_num_1,1.0,1,10792,5396,101,99,27,99.9425113661597
+ratio_1_000000_num_1,1.0,1,10792,5396,101,99,100,100.00000000000004

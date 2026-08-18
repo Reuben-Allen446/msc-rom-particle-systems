@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "notebook": "13_xz_particle_representation_sensitivity.ipynb",
+  "source_notebook_12_manifest": {
+    "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_manifest.json",
+    "sha256": "f093f7de958f5fcd6860ebcfee8416af27aa01d4b1c8ed1488e05d7fb8e9e844"
+  },
+  "experiment": {
+    "case_count": 5,
+    "size_ratios": [
+      1.0,
+      1.252525,
+      1.494949,
+      1.747475,
+      2.0
+    ],
+    "ranks": [
+      0,
+      8,
+      14,
+      27,
+      100
+    ],
+    "training_snapshots_per_case": 101,
+    "validation_snapshots_per_case": 99,
+    "particle_representation": "labelled XZ coordinates",
+    "comparison_representations": [
+      "labelled XYZ coordinates",
+      "small-species XZ volume fraction"
+    ],
+    "validation_type": "blocked cycle-2 oracle projection",
+    "lucy_cutoff": 3.0,
+    "grid_shape": [
+      100,
+      100
+    ]
+  },
+  "regression": {
+    "maximum_rank_zero_metric_difference": 0.0,
+    "maximum_natural_cycle_error_difference": 0.0
+  },
+  "rank_100_findings": {
+    "xz_error_range_percent": [
+      92.6873198150537,
+      140.3589388034058
+    ],
+    "xz_error_reduction_vs_xyz_range_percent": [
+      2.188555091424732,
+      3.189442197645765
+    ],
+    "xz_to_continuum_error_ratio_range": [
+      10.25027739484067,
+      30.80155343821238
+    ],
+    "xz_error_strictly_increases": true,
+    "xz_to_continuum_penalty_strictly_increases": true
+  },
+  "case_manifests": {
+    "ratio_1_000000_num_1": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_manifest_ratio_1_000000_num_1.json",
+      "sha256": "f8c66c28c818ec7bf33eab465136b8da6abbf502e8bf95245e140b5684d38263"
+    },
+    "ratio_1_252525_num_26": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_manifest_ratio_1_252525_num_26.json",
+      "sha256": "17a474287f03f69afe794a6eef65731d63f00f373761438cd76ababefceca4c9"
+    },
+    "ratio_1_494949_num_50": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_manifest_ratio_1_494949_num_50.json",
+      "sha256": "0b385e7a93a1cb3ca2539c82403371244196ec3c9eaa7572313f3383aa212e2d"
+    },
+    "ratio_1_747475_num_75": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_manifest_ratio_1_747475_num_75.json",
+      "sha256": "54b2df2c11412cb05350f14055ae801daeda10dd25535a47ccfee5e04ce81532"
+    },
+    "ratio_2_000000_num_100": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_manifest_ratio_2_000000_num_100.json",
+      "sha256": "b378456eef45597fa41f0412955a470ef530575e3ebe382ed6628a12c00a5574"
+    }
+  },
+  "aggregate_artifacts": {
+    "master_field_csv": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_field_all_cases.csv",
+      "sha256": "ec344a131baf0c9d9f49901999238ed9b57b2732bfdf2c073aa1c0479e3cc1cf"
+    },
+    "master_particle_csv": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_particle_all_cases.csv",
+      "sha256": "7d76a96672784fb4306470eae0e169b7e99e2544fd341d253f6a89cddea06f6c"
+    },
+    "master_energy_csv": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_first_energy_all_cases.csv",
+      "sha256": "9edfc3c7820c1deb8b188464c5ee24deeca1ced0c8469b304e906204a94834e4"
+    },
+    "comparison_by_rank_csv": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_route_comparison_by_rank.csv",
+      "sha256": "1647b84656c1c16702cd2541afa5b34d21e0bd6baaf43e3031e3b2e4e2b3d636"
+    },
+    "rank_100_summary_csv": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_rank_100_summary.csv",
+      "sha256": "9696977702c5299dcb57237881f0fa5e939a70fecc5844a3eb4eba3a3293e905"
+    },
+    "regression_summary_csv": {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_regression_summary.csv",
+      "sha256": "41a7e6a220efe05036b0f5d916a8d432589e8fbab008d10c091e4724cf3e28e3"
+    },
+    "rank_figure_pdf": {
+      "relative_path": "results/figures/xz_particle_representation_sensitivity/xz_sensitivity_error_by_rank.pdf",
+      "sha256": "a74fcb7ce3ded8ceb2e88cba6d1f139346a04b60da88557a35aafcfd7b40f567"
+    },
+    "rank_figure_png": {
+      "relative_path": "results/figures/xz_particle_representation_sensitivity/xz_sensitivity_error_by_rank.png",
+      "sha256": "48eb01638fa548bc722609d9ffbac9dd05ab5e6d176a1c633a787b5aef95e63c"
+    },
+    "summary_figure_pdf": {
+      "relative_path": "results/figures/xz_particle_representation_sensitivity/xz_sensitivity_rank_100_summary.pdf",
+      "sha256": "17638c91035666e0df52baf309b2d072c5777ca5227b8a473484e543501dec4a"
+    },
+    "summary_figure_png": {
+      "relative_path": "results/figures/xz_particle_representation_sensitivity/xz_sensitivity_rank_100_summary.png",
+      "sha256": "ecfe09efad1cdc83a7758b482777b3d94147ac5e5061d4c5952e04f0a15d563c"
+    }
+  }
+}
