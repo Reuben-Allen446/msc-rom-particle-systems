@@ -1,0 +1,3 @@
+fit,duration_level_count,slope,intercept,r_squared
+All six duration levels,6,-0.42990953182476266,2.6670446698980657,0.9864519423277611
+Exclude longest level (n=2),5,-0.4610586388693289,2.769821878045672,0.9898572213613279

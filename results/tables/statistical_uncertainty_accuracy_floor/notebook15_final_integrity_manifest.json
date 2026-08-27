@@ -1,0 +1,497 @@
+{
+  "created_utc": "2026-08-27T13:11:49.840808+00:00",
+  "files": [
+    {
+      "relative_path": "data/processed/cg_phi_paper_rank15_uncentred_raw.pt",
+      "role": "trusted_input",
+      "sha256": "571c12493edd5782859f617316badd4b58402b2b06a90e6d03fddccf6baea516",
+      "size_bytes": 1554700
+    },
+    {
+      "relative_path": "data/processed/cg_phi_small_dataset.npz",
+      "role": "trusted_input",
+      "sha256": "6915b428fee927d6ed3beecc4b5947bad0eb4895ee2b59d5ddaa086b4af11e56",
+      "size_bytes": 3411799
+    },
+    {
+      "relative_path": "data/processed/cg_phi_validation_selected_rank_uncentred_raw.pt",
+      "role": "trusted_input",
+      "sha256": "df716ccd732b88e67a73eec7873d33ba5efb9c9b5bc7ca30aec2fe99f1edacf7",
+      "size_bytes": 623748
+    },
+    {
+      "relative_path": "notebooks/14_exact_paper_method_reproduction.ipynb",
+      "role": "trusted_input",
+      "sha256": "0bece10f492237365573d66fc6fff451eb7bd973e819405a5f51f0a06144731a",
+      "size_bytes": 844473
+    },
+    {
+      "relative_path": "notebooks/15_statistical_uncertainty_accuracy_floor.ipynb",
+      "role": "notebook",
+      "sha256": "a3d54f1e789a6024c79bed3caa75552c16bd137242fec68ed81d461268a325a7",
+      "size_bytes": 1076982
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_duration_scaling_sensitivities.pdf",
+      "role": "figure_artifact",
+      "sha256": "2020105d862c1149dbf9a93b589596b03654f6041d9ddbdb162e77cb65e76cc6",
+      "size_bytes": 20693
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_duration_scaling_sensitivities.png",
+      "role": "figure_artifact",
+      "sha256": "3570fba299c7512ba231c7a7d4d6804af1ddf6ffc8990c017ac47599bd0f0b5f",
+      "size_bytes": 128093
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_field_error_decomposition.pdf",
+      "role": "figure_artifact",
+      "sha256": "8418b38a16caf8ccd8111b49422e31596184628e7e9dbddec69972b3f2393093",
+      "size_bytes": 24689
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_field_error_decomposition.png",
+      "role": "figure_artifact",
+      "sha256": "47668ec2853cfa191cb005abbf0043ecd93b5cf0fc050c467bab108e37d48536",
+      "size_bytes": 340010
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_interpolation_validation.pdf",
+      "role": "figure_artifact",
+      "sha256": "b9d8548fec3978c918a50faa73846dd512ca17a5ecfe0663037ea4c70b575223",
+      "size_bytes": 18003
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_interpolation_validation.png",
+      "role": "figure_artifact",
+      "sha256": "bfd8c302d942587fe2ade86b580a1b61e9d2e9f030f9b1b2d8870d25b0527ff1",
+      "size_bytes": 193954
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_modewise_uncertainty_vs_coefficient_error.pdf",
+      "role": "figure_artifact",
+      "sha256": "c1b9a6d1edbc2406784f4ea11f4af002d41d4c0290fb33b83398150103c2e9d4",
+      "size_bytes": 22012
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/stage4_modewise_uncertainty_vs_coefficient_error.png",
+      "role": "figure_artifact",
+      "sha256": "711c88400f92bc2dc49314b6a3350844a00ca87bd9241767929c8a8461d0f878",
+      "size_bytes": 258694
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/variable_duration_scaling.pdf",
+      "role": "figure_artifact",
+      "sha256": "f2e64cc9e2471b4025b73a1d6edba90a85754f29ce91ff3e26647610ed9da444",
+      "size_bytes": 24271
+    },
+    {
+      "relative_path": "results/figures/statistical_uncertainty_accuracy_floor/variable_duration_scaling.png",
+      "role": "figure_artifact",
+      "sha256": "448345b0db9e8b11398ea0c4c4db3dfca334c64f7114bc9b3cb05b43585ed823",
+      "size_bytes": 267065
+    },
+    {
+      "columns": [
+        "split",
+        "size_ratio",
+        "simulation_number",
+        "time",
+        "n_x",
+        "n_z",
+        "phi_min",
+        "phi_max",
+        "phi_mean",
+        "phi_std",
+        "nonzero_fraction",
+        "filename"
+      ],
+      "relative_path": "results/tables/cg_phi_quality_summary.csv",
+      "role": "trusted_input",
+      "row_count": 110,
+      "sha256": "7fb46104a11d7ec182b69c189c92b15c34ac18cd47f1bd545dcc8894e0c3c76e",
+      "size_bytes": 16881
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/exact_paper_method_reproduction_manifest.json",
+      "role": "trusted_input",
+      "sha256": "f15744e23b1bfc3898750a1e2fb2504a2d3ca9c6c96c714188a4094d0357604f",
+      "size_bytes": 9080
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "evaluation_role",
+        "uncertainty_source",
+        "duration_scaling",
+        "size_ratio",
+        "source_simulation",
+        "window_count",
+        "sample_ddof",
+        "short_duration",
+        "target_duration",
+        "duration_exponent",
+        "duration_factor",
+        "short_field_variability_absolute",
+        "target_field_variability_absolute",
+        "short_field_variability_percent",
+        "target_field_variability_percent",
+        "naive_ten_window_mean_variability_absolute",
+        "ten_window_mean_vs_canonical_absolute",
+        "ten_window_mean_vs_canonical_percent",
+        "truth_field_norm"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_duration_adjusted_field_uncertainty.csv",
+      "role": "table_artifact",
+      "row_count": 40,
+      "sha256": "86294c2ead01cd85197216243310381050ea8f77fec26a9caa0df81be4a36edb",
+      "size_bytes": 12115
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "evaluation_role",
+        "uncertainty_source",
+        "duration_scaling",
+        "size_ratio",
+        "source_simulation",
+        "mode",
+        "window_count",
+        "sample_ddof",
+        "short_duration",
+        "target_duration",
+        "duration_exponent",
+        "duration_factor",
+        "mean_window_coefficient",
+        "canonical_coefficient",
+        "mean_vs_canonical_coefficient",
+        "short_modal_sd_absolute",
+        "target_modal_sd_absolute",
+        "short_modal_sd_percent",
+        "target_modal_sd_percent",
+        "naive_ten_window_mean_sd_absolute",
+        "truth_field_norm"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_duration_adjusted_modewise_uncertainty.csv",
+      "role": "table_artifact",
+      "row_count": 420,
+      "sha256": "7e69c914deef87050f363e73f551b10d8e7454e809df2c3c3dfcd0e5b4aea3e7",
+      "size_bytes": 134278
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "evaluation_role",
+        "uncertainty_source",
+        "duration_scaling",
+        "size_ratio",
+        "source_simulation",
+        "mode",
+        "all_level_exponent",
+        "all_level_r_squared",
+        "all_level_count",
+        "excluding_n2_exponent",
+        "excluding_n2_r_squared",
+        "excluding_n2_level_count",
+        "used_for_primary_rule"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_modewise_duration_exponent_diagnostics.csv",
+      "role": "table_artifact",
+      "row_count": 21,
+      "sha256": "080870c399f7e99c1887a15e21b0f36a0cd4eaf963d0087ab8557c7c511d6df0",
+      "size_bytes": 4195
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "case_set",
+        "case_identifier",
+        "evaluation_role",
+        "uncertainty_source",
+        "duration_scaling",
+        "size_ratio",
+        "source_simulation",
+        "mode",
+        "truth_field_norm",
+        "projected_coefficient",
+        "predicted_coefficient",
+        "coefficient_error_absolute",
+        "coefficient_error_percent",
+        "modal_uncertainty_absolute",
+        "modal_uncertainty_percent",
+        "coefficient_error_to_uncertainty_ratio",
+        "mode_ratio_stable",
+        "uncertainty_rule_frozen_before_evaluation",
+        "external_test_used_for_selection"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_modewise_rom_uncertainty_comparison.csv",
+      "role": "table_artifact",
+      "row_count": 840,
+      "sha256": "7e6b59098e65a6c8cf281c2e4ad20b0fff99183960e81f7ca56992f8e32b227e",
+      "size_bytes": 247049
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "package_path",
+        "package_sha256",
+        "manifest_sha256",
+        "hash_match",
+        "pod_formulation",
+        "coefficient_scaling",
+        "input_dimension",
+        "hidden_width",
+        "activation",
+        "training_index_count",
+        "validation_index_count",
+        "orthonormality_residual",
+        "deterministic_difference"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_package_schema_audit.csv",
+      "role": "table_artifact",
+      "row_count": 2,
+      "sha256": "82e011216a5ead46bbfc65295ee65eec9e1ac51d7628b471de48bfaeed143524",
+      "size_bytes": 878
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "case_set",
+        "case_identifier",
+        "evaluation_role",
+        "uncertainty_source",
+        "duration_scaling",
+        "size_ratio",
+        "source_simulation",
+        "truth_field_norm",
+        "projection_error_absolute",
+        "coefficient_error_absolute",
+        "coefficient_field_error_absolute",
+        "rom_error_absolute",
+        "projection_error_percent",
+        "coefficient_error_percent",
+        "rom_error_percent",
+        "pythagorean_residual",
+        "coefficient_field_equivalence_residual",
+        "field_uncertainty_absolute",
+        "field_uncertainty_percent",
+        "modal_uncertainty_norm_absolute",
+        "modal_uncertainty_norm_percent",
+        "rom_to_field_uncertainty_ratio",
+        "coefficient_to_modal_uncertainty_ratio",
+        "field_ratio_stable",
+        "modal_vector_ratio_stable",
+        "uncertainty_rule_frozen_before_evaluation",
+        "external_test_used_for_selection"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_rom_error_decomposition.csv",
+      "role": "table_artifact",
+      "row_count": 80,
+      "sha256": "e9d672be3d3cd0e99d644c73aa4c58645dbe252c2a7a68efeddbf7a5a11858a2",
+      "size_bytes": 36803
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "evaluation_role",
+        "uncertainty_source",
+        "prediction_source",
+        "duration_scaling",
+        "size_ratio",
+        "source_simulation",
+        "quantity",
+        "mode",
+        "loo_eligible",
+        "exclusion_reason",
+        "observed_absolute",
+        "predicted_absolute",
+        "absolute_error",
+        "relative_error_percent"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_uncertainty_interpolation_loo.csv",
+      "role": "table_artifact",
+      "row_count": 500,
+      "sha256": "72b2f76171854e8e621cd5b3305e1efb64474e8d4c8d834566ec9abaa72bf164",
+      "size_bytes": 108114
+    },
+    {
+      "columns": [
+        "check",
+        "passed",
+        "value",
+        "requirement",
+        "notes"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_validation_checks.csv",
+      "role": "table_artifact",
+      "row_count": 24,
+      "sha256": "b846d8dcb500c4c6198f3e00a62401597f4494ed381fa316486729449c11fdbe",
+      "size_bytes": 1975
+    },
+    {
+      "columns": [
+        "model",
+        "rank",
+        "evaluation_role",
+        "uncertainty_source",
+        "duration_scaling",
+        "size_ratio",
+        "source_simulation",
+        "quantity",
+        "mode",
+        "duration",
+        "target_duration",
+        "duration_difference_from_target",
+        "relative_duration_difference_percent",
+        "field_count",
+        "variance_degrees_of_freedom",
+        "direct_absolute_sd",
+        "primary_estimate_absolute",
+        "direct_to_primary_ratio",
+        "one_degree_of_freedom_warning"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_variable_duration_n2_sensitivity.csv",
+      "role": "table_artifact",
+      "row_count": 23,
+      "sha256": "39fbd4964845b07dfb29a1fa57a682f2d1f8180d5f157b837e94246dea5b27e3",
+      "size_bytes": 5391
+    },
+    {
+      "columns": [
+        "lower_duration_level",
+        "upper_duration_level",
+        "geometric_mean_duration",
+        "local_scaling_exponent"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/variable_duration_local_exponents.csv",
+      "role": "table_artifact",
+      "row_count": 5,
+      "sha256": "3296cc81a4ebe0c9bf32c985074094e267109f810ef77d34f3c719fac8c4b41f",
+      "size_bytes": 307
+    },
+    {
+      "columns": [
+        "duration_level",
+        "field_count",
+        "minimum_duration",
+        "mean_duration",
+        "maximum_duration",
+        "expected_power_of_two_multiple",
+        "observed_duration_multiple",
+        "maximum_relative_duration_deviation",
+        "earliest_time",
+        "latest_time",
+        "total_span",
+        "summed_duration",
+        "sum_minus_span",
+        "minimum_adjacent_gap",
+        "maximum_adjacent_gap",
+        "maximum_overlap",
+        "maximum_parent_child_boundary_difference"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/variable_duration_partition_summary.csv",
+      "role": "table_artifact",
+      "row_count": 6,
+      "sha256": "ab3a4838ac4154fb2a4e9213fb23e4f909b92dbb9c1d7aa9b081e20dfb0dbb5e",
+      "size_bytes": 1166
+    },
+    {
+      "columns": [
+        "fit",
+        "duration_level_count",
+        "slope",
+        "intercept",
+        "r_squared"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/variable_duration_scaling_fits.csv",
+      "role": "table_artifact",
+      "row_count": 2,
+      "sha256": "3e5866044fabb2a91c66dcad10c348ce119d458337b857a15e17323e1a1c7275",
+      "size_bytes": 223
+    },
+    {
+      "columns": [
+        "duration_level",
+        "field_count",
+        "mean_duration",
+        "minimum_duration",
+        "maximum_duration",
+        "mean_window_deviation_percent",
+        "median_window_deviation_percent",
+        "maximum_window_deviation_percent",
+        "field_variability_percent",
+        "naive_level_mean_standard_error_percent",
+        "weighted_vs_unweighted_mean_percent",
+        "weighted_mean_vs_finest_level_percent",
+        "integral_coefficient_of_variation_percent",
+        "minimum_phi",
+        "maximum_phi",
+        "inverse_square_root_reference_percent",
+        "observed_to_inverse_square_root_ratio"
+      ],
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/variable_duration_scaling_summary.csv",
+      "role": "table_artifact",
+      "row_count": 6,
+      "sha256": "ce20e95ba5f2af6d7569c7605976503f62bc351c7debdc27cfadd34eca564ec0",
+      "size_bytes": 1955
+    }
+  ],
+  "fixed_methodology": {
+    "direct_n2_duration": 344.145,
+    "direct_n2_variance_degrees_of_freedom": 1,
+    "duration_ratio": 10.0,
+    "external_test_used_for_selection": false,
+    "inverse_square_root_exponent": -0.5,
+    "primary_duration_exponent": -0.461059,
+    "short_duration": 34.372,
+    "target_duration": 343.72
+  },
+  "hash_algorithm": "SHA-256",
+  "manifest_self_hash_excluded": true,
+  "manifest_type": "Notebook 15 final integrity manifest",
+  "notebook": {
+    "cell_count": 24,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "nonempty_code_cell_count": 18,
+    "relative_path": "notebooks/15_statistical_uncertainty_accuracy_floor.ipynb",
+    "scientific_audit_status": "Stage 4 accepted unchanged"
+  },
+  "recorded_file_count": 30,
+  "repository": {
+    "git_branch": "particle-rom-comparison",
+    "parent_commit": "9874a8f5d61c7614808fc7dd9891cf411bee942d"
+  },
+  "required_stage4_artifact_count": 17,
+  "schema_version": 1,
+  "scope": {
+    "raw_external_cg_files_hashed": false,
+    "raw_particle_files_hashed": false,
+    "raw_provenance_basis": "Validated notebook outputs, inventories, quality summaries and saved tables"
+  }
+}
