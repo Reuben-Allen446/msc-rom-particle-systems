@@ -1,0 +1,4 @@
+table,case_id,metric,maximum_absolute_difference,passed
+average,ratio_1_000000_num_1,grid_fraction_phi_lt_zero_percent,0.08999999999999997,False
+average,ratio_1_494949_num_50,grid_fraction_phi_lt_zero_percent,0.039999999999999925,False
+average,ratio_2_000000_num_100,grid_fraction_phi_lt_zero_percent,0.06,False

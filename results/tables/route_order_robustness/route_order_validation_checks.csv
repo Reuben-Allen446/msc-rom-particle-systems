@@ -1,0 +1,14 @@
+check,passed,value
+27_sweep_configurations,True,27
+three_cases,True,"['ratio_1_000000_num_1', 'ratio_1_494949_num_50', 'ratio_2_000000_num_100']"
+grid_sizes,True,"[75, 100, 125]"
+cutoffs,True,"[2.0, 3.0, 4.0]"
+ranks,True,"[27, 100]"
+one_run_per_case_grid_cutoff,True,1
+average_table_shape,True,"(108, 22)"
+time_table_shape,True,"(108, 22)"
+energy_table_shape,True,"(54, 9)"
+all_time_route_ratios_above_one,True,6.7208678515939235
+all_average_route_ratios_above_one,True,33.61896278075038
+substantive_baseline_reproduced,True,True
+threshold_metric_flagged,True,True

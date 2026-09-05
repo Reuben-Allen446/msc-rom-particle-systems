@@ -1,0 +1,313 @@
+{
+  "analysis_status": "validated",
+  "artifact_count": 17,
+  "artifacts": [
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_time_case_rank_robustness.csv",
+      "role": "table_artifact",
+      "sha256": "5075241ea5e9935ec188db494a7c28bea406e6e8e0b35808ecdc2a556fb1d447",
+      "size_bytes": 2182
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_average_case_rank_robustness.csv",
+      "role": "table_artifact",
+      "sha256": "7e872bef70a3ea9192b3bfa36d1278e24edd22d2ac207b28d42cc6c7b32814f1",
+      "size_bytes": 2176
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_time_configuration_summary.csv",
+      "role": "table_artifact",
+      "sha256": "e71d379878a289c267abc5856c1eb84fd810e56ecaa1dfd4401c74869ebd322c",
+      "size_bytes": 1993
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_average_configuration_summary.csv",
+      "role": "table_artifact",
+      "sha256": "e846894a691550bd9d31983f8e03211846a7cf769e3149e475a673553bf44bc3",
+      "size_bytes": 1966
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_time_resolved_sweep.csv",
+      "role": "table_artifact",
+      "sha256": "b2e9edacbed9bd3cec21ec103dfaa9f6c5f9c38296b775e4d0763e6879a6f822",
+      "size_bytes": 35897
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_time_averaged_sweep.csv",
+      "role": "table_artifact",
+      "sha256": "667ff3435345149956e81b8b9c28965123a29e37f2e34160867a9329619d77e4",
+      "size_bytes": 36720
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_energy_sweep.csv",
+      "role": "table_artifact",
+      "sha256": "0e620a14c8e3797c882470835207028d307f801c64d498f3496d90fb18fd812b",
+      "size_bytes": 6381
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_sweep_run_log.csv",
+      "role": "table_artifact",
+      "sha256": "a5b1d1ee31f6448b9fa969dcff67cd06233ec9ac5fc983616ca3d65adca0de7c",
+      "size_bytes": 2487
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_baseline_audit.csv",
+      "role": "table_artifact",
+      "sha256": "c2f6ebd74e7a0048e3aa27f1d84171f55109207dd4e2cc5aeedc7a8c0b047b7b",
+      "size_bytes": 7729
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_threshold_sensitive_diagnostic.csv",
+      "role": "table_artifact",
+      "sha256": "5db242791bb08e68ce522fe44dd3967419966e101861ade24cabe3293e4b1338",
+      "size_bytes": 312
+    },
+    {
+      "relative_path": "results/tables/route_order_robustness/route_order_validation_checks.csv",
+      "role": "table_artifact",
+      "sha256": "3f7b95a55281c192a47df9ab761b4cc43d25f0a687fd104ece511277f96daf4c",
+      "size_bytes": 565
+    },
+    {
+      "relative_path": "results/figures/route_order_robustness/route_order_ratio_robustness.pdf",
+      "role": "figure_artifact",
+      "sha256": "0eb48be4a88d868790dc40536c16ee21d2094198a537191b64a94ffb741f7fa8",
+      "size_bytes": 21198
+    },
+    {
+      "relative_path": "results/figures/route_order_robustness/route_order_ratio_robustness.png",
+      "role": "figure_artifact",
+      "sha256": "fb3d8aecef69b45cd20a6cdf390903915628d0d4874eacef0dde3ef0f3c4b64b",
+      "size_bytes": 299290
+    },
+    {
+      "relative_path": "results/figures/route_order_robustness/route_order_error_sensitivity.pdf",
+      "role": "figure_artifact",
+      "sha256": "f1daf79310b71d43bbf78837b3606d44110b1ee64610912d78fcfc4edde3047f",
+      "size_bytes": 25871
+    },
+    {
+      "relative_path": "results/figures/route_order_robustness/route_order_error_sensitivity.png",
+      "role": "figure_artifact",
+      "sha256": "3123e990f50bfbf7a6ced204f9c7ac85b9acc66f6c3d72310482d387367c2b39",
+      "size_bytes": 393198
+    },
+    {
+      "relative_path": "results/figures/route_order_robustness/route_order_runtime_summary.pdf",
+      "role": "figure_artifact",
+      "sha256": "08112a1d6bb57e70b30a961cbc78e60da94bd213745a2c35fb77f55f401ccf1c",
+      "size_bytes": 22144
+    },
+    {
+      "relative_path": "results/figures/route_order_robustness/route_order_runtime_summary.png",
+      "role": "figure_artifact",
+      "sha256": "1726c9275b8ae6b9651416550be70b25073236e3b6a2a17c795b3b9e2ee53acb",
+      "size_bytes": 216471
+    }
+  ],
+  "manifest_self_hash_excluded": true,
+  "manifest_type": "Notebook 16 route-order robustness artifact manifest",
+  "methodology": {
+    "axial_averaging_length": 10.0,
+    "baseline_cutoff": 3.0,
+    "baseline_grid_size": 100,
+    "case_ids": [
+      "ratio_1_000000_num_1",
+      "ratio_1_494949_num_50",
+      "ratio_2_000000_num_100"
+    ],
+    "comparison_time_max": 1720.72,
+    "cutoffs": [
+      2.0,
+      3.0,
+      4.0
+    ],
+    "grid_sizes": [
+      75,
+      100,
+      125
+    ],
+    "pod_ranks": [
+      27,
+      100
+    ],
+    "source_function_sha256": "f83a42d2c9c6262893d24dde85a9be87515b5f3818d7bf02141c6d0ed9864bc4",
+    "training_snapshot_count": 101,
+    "validation_snapshot_count": 99
+  },
+  "schema_version": 1,
+  "scope": {
+    "external_cases_included": false,
+    "files_written_before_validated_save": false,
+    "raw_dem_files_accessed": false,
+    "raw_external_files_accessed": false,
+    "threshold_sensitive_metric": "grid_fraction_phi_lt_zero_percent"
+  },
+  "trusted_inputs": [
+    {
+      "relative_path": "data/interim/multi_parameter_route_order/particle_positions_ratio_1_494949_num_50.npz",
+      "sha256": "298993f2ce1979ed7d0e419ac1e9a2f605649fc3e2f02449ae933e84f3fdf4d7"
+    },
+    {
+      "relative_path": "data/interim/multi_parameter_route_order/particle_positions_ratio_2_000000_num_100.npz",
+      "sha256": "dc06acfa0b7f7ea96519973c58e96230ee57961c2f35c1aa278dcbe4baa08fca"
+    },
+    {
+      "relative_path": "data/interim/multi_parameter_route_order/snapshot_manifest_ratio_1_494949_num_50.json",
+      "sha256": "37ff3884f4739631a78a45ff43f820bf8eab55497f9ff5f14452ac4cbf57a30c"
+    },
+    {
+      "relative_path": "data/interim/multi_parameter_route_order/snapshot_manifest_ratio_2_000000_num_100.json",
+      "sha256": "03fa12f2443c2de649eb02a831ca7deaf5f7c40377a177b89b2c4570de09e297"
+    },
+    {
+      "relative_path": "data/interim/particle_positions_ratio_1_000000_num_1.npz",
+      "sha256": "97bddffd33e2bcf8f6863cf29d5f82f5268c9a225bdac3f4399ca4704db3a9a1"
+    },
+    {
+      "relative_path": "data/processed/cg_phi_small_dataset.npz",
+      "sha256": "6915b428fee927d6ed3beecc4b5947bad0eb4895ee2b59d5ddaa086b4af11e56"
+    },
+    {
+      "relative_path": "notebooks/12_multi_parameter_route_order.ipynb",
+      "sha256": "466e6ffd5c6abf22fd14ccbf61158ac5cd4989e80f8a8984c1f763c7cf987ffa"
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/exact_paper_method_reproduction_manifest.json",
+      "sha256": "f15744e23b1bfc3898750a1e2fb2504a2d3ca9c6c96c714188a4094d0357604f"
+    },
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_average_all_cases.csv",
+      "sha256": "c0a44fbd400bd2e30c5876998dfac837370e40e79f806a9463712bf77f304c9b"
+    },
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_energy_all_cases.csv",
+      "sha256": "a39c3d4aac7d9f47afc86991bbb844e0f196c6489de28958c3060cf446c3265c"
+    },
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_manifest.json",
+      "sha256": "f093f7de958f5fcd6860ebcfee8416af27aa01d4b1c8ed1488e05d7fb8e9e844"
+    },
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_time_resolved_all_cases.csv",
+      "sha256": "733dbbde73c2004c46fd0ef4878a1138ab94e5e33e987ec04207bfde90f520a6"
+    },
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_1_000000_num_1.json",
+      "sha256": "e8a549340002031a28608d56746feb4e2560591a8a4c4fd804f753a377de1a70"
+    },
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_1_494949_num_50.json",
+      "sha256": "520ba034fed7aa2235bbecf54648e66d442c7625272c1313140f019f2aaec517"
+    },
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/route_order_manifest_ratio_2_000000_num_100.json",
+      "sha256": "bd07569c8215a5a12e34b3eb22125dceb6f824b8fe700fda7ea4f11ae79ecdf9"
+    },
+    {
+      "relative_path": "results/tables/particle_snapshot_representation_ratio_1_000000_num_1.json",
+      "sha256": "9b74ba004d01f60ee8694b491b777283e454450d5378c0ff65032a83ad77c2a6"
+    }
+  ],
+  "validation": {
+    "maximum_configuration_runtime_seconds": 137.46620111399898,
+    "minimum_time_averaged_ratio": 33.61896278075038,
+    "minimum_time_resolved_ratio": 6.7208678515939235,
+    "pre_save_checks_passed": true,
+    "substantive_baseline_reproduced": true,
+    "threshold_metric_maximum_difference": 0.08999999999999997,
+    "threshold_sensitive_metric_flagged": true,
+    "total_sweep_runtime_seconds": 934.7352169559927,
+    "validation_checks": [
+      {
+        "check": "27_sweep_configurations",
+        "passed": true,
+        "value": 27
+      },
+      {
+        "check": "three_cases",
+        "passed": true,
+        "value": [
+          "ratio_1_000000_num_1",
+          "ratio_1_494949_num_50",
+          "ratio_2_000000_num_100"
+        ]
+      },
+      {
+        "check": "grid_sizes",
+        "passed": true,
+        "value": [
+          75,
+          100,
+          125
+        ]
+      },
+      {
+        "check": "cutoffs",
+        "passed": true,
+        "value": [
+          2.0,
+          3.0,
+          4.0
+        ]
+      },
+      {
+        "check": "ranks",
+        "passed": true,
+        "value": [
+          27,
+          100
+        ]
+      },
+      {
+        "check": "one_run_per_case_grid_cutoff",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "check": "average_table_shape",
+        "passed": true,
+        "value": [
+          108,
+          22
+        ]
+      },
+      {
+        "check": "time_table_shape",
+        "passed": true,
+        "value": [
+          108,
+          22
+        ]
+      },
+      {
+        "check": "energy_table_shape",
+        "passed": true,
+        "value": [
+          54,
+          9
+        ]
+      },
+      {
+        "check": "all_time_route_ratios_above_one",
+        "passed": true,
+        "value": 6.7208678516
+      },
+      {
+        "check": "all_average_route_ratios_above_one",
+        "passed": true,
+        "value": 33.6189627808
+      },
+      {
+        "check": "substantive_baseline_reproduced",
+        "passed": true,
+        "value": true
+      },
+      {
+        "check": "threshold_metric_flagged",
+        "passed": true,
+        "value": true
+      }
+    ]
+  }
+}
