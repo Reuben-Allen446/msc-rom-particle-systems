@@ -1,0 +1,5 @@
+model,rank,method,fitting_node_count,maximum_node_reconstruction_difference
+validation_selected_rank,6,piecewise_linear,90,2.7755575615628914e-17
+validation_selected_rank,6,pchip,90,2.0816681711721685e-17
+paper_rank15,15,piecewise_linear,90,2.7755575615628914e-17
+paper_rank15,15,pchip,90,2.0816681711721685e-17

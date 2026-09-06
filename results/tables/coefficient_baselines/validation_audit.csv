@@ -1,0 +1,11 @@
+check,passed,value
+frozen_input_hashes,True,True
+frozen_case_reproduction,True,2.220446049250313e-16
+external_case_count,True,10
+internal_validation_case_count,True,10
+pythagorean_decomposition,True,9.2970336290632e-18
+loo_interior_case_count,True,352
+loo_endpoint_exclusion,True,"[1.0, 2.0]"
+external_non_leakage,True,False
+all_results_finite,True,True
+artifact_existence,True,18

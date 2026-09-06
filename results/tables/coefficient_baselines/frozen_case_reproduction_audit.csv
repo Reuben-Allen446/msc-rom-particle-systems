@@ -1,0 +1,3 @@
+model,rank,maximum_case_error_difference_percent,mean_error_percent,median_error_percent,maximum_error_percent
+validation_selected_rank,6,2.220446049250313e-16,0.8578501575244906,0.8143109729288709,1.32850392085006
+paper_rank15,15,2.220446049250313e-16,0.8598677038134135,0.8254669534598716,1.449864490091903

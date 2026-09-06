@@ -1,0 +1,224 @@
+{
+  "manifest_self_hash_excluded": true,
+  "manifest_type": "Notebook 18 final integrity manifest",
+  "methodology": {
+    "coefficient_scaling": "none",
+    "external_case_count": 10,
+    "fitting_case_count": 90,
+    "internal_validation_case_count": 10,
+    "loo_endpoints_excluded": true,
+    "loo_interior_case_count": 88,
+    "methods": [
+      "frozen_nn",
+      "piecewise_linear",
+      "pchip"
+    ],
+    "negative_prediction_threshold": -0.0001,
+    "pod_formulation": "uncentred",
+    "ranks": [
+      6,
+      15
+    ]
+  },
+  "notebook": "notebooks/18_coefficient_baselines_and_validation.ipynb",
+  "notebook_metadata": {
+    "cell_count": 14,
+    "execution_counts": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      15
+    ],
+    "nonempty_code_cell_count": 10,
+    "stored_errors": [],
+    "stored_stderr_cells": []
+  },
+  "notebook_sha256": "eb5ef0dc8d8944d9a690528c3414ef2bda218f75cd8a867a40c55848c9456607",
+  "recorded_file_count": 27,
+  "records": [
+    {
+      "relative_path": "data/processed/cg_phi_small_dataset.npz",
+      "role": "trusted_input:dataset",
+      "sha256": "6915b428fee927d6ed3beecc4b5947bad0eb4895ee2b59d5ddaa086b4af11e56",
+      "size_bytes": 3411799
+    },
+    {
+      "relative_path": "data/processed/cg_phi_validation_selected_rank_uncentred_raw.pt",
+      "role": "trusted_input:rank_6_package",
+      "sha256": "df716ccd732b88e67a73eec7873d33ba5efb9c9b5bc7ca30aec2fe99f1edacf7",
+      "size_bytes": 623748
+    },
+    {
+      "relative_path": "data/processed/cg_phi_paper_rank15_uncentred_raw.pt",
+      "role": "trusted_input:rank_15_package",
+      "sha256": "571c12493edd5782859f617316badd4b58402b2b06a90e6d03fddccf6baea516",
+      "size_bytes": 1554700
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/final_continuum_rom_test_cases.csv",
+      "role": "trusted_input:final_case_errors",
+      "sha256": "7b8e495ed1b8197ef2033d9ed3d52d41e5d4ce7990828cd05353fa2d671fce31",
+      "size_bytes": 1625
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/final_continuum_rom_comparison.csv",
+      "role": "trusted_input:final_summary",
+      "sha256": "5ed41a23ddd2a10de7f9526f595ee72e3019a5c7eeb76f29c624a50f1a55d30c",
+      "size_bytes": 1022
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/paper_rank_training_restart_results.csv",
+      "role": "trusted_input:restart_results",
+      "sha256": "211c92624b181c5b944c4967fcd95ea7d545254951e2dfc058b2bb9c056d3358",
+      "size_bytes": 6911
+    },
+    {
+      "relative_path": "results/tables/exact_paper_method_reproduction/paper_rank_training_selected_models.csv",
+      "role": "trusted_input:selected_models",
+      "sha256": "2b00575f85373755d66a220d30d91908029007056c34eddc4fe424d31b367367",
+      "size_bytes": 2619
+    },
+    {
+      "relative_path": "notebooks/18_coefficient_baselines_and_validation.ipynb",
+      "role": "notebook",
+      "sha256": "eb5ef0dc8d8944d9a690528c3414ef2bda218f75cd8a867a40c55848c9456607",
+      "size_bytes": 630050
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/frozen_input_audit.csv",
+      "role": "table_artifact:frozen_input_audit",
+      "sha256": "ebf086a8f72904c90177f074cd26d6bad75df4616933ccd877e7b3a145929b8e",
+      "size_bytes": 212
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/frozen_case_reproduction_audit.csv",
+      "role": "table_artifact:frozen_case_audit",
+      "sha256": "029b3ca8b771cea73106fa78320b8782b2e3865911046fd023853960c4476609",
+      "size_bytes": 309
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/interpolation_node_audit.csv",
+      "role": "table_artifact:interpolation_audit",
+      "sha256": "38ffa18a0010e9114afec3daa4dde7fd43c05edea4f0898fa2e221ddb4278303",
+      "size_bytes": 312
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/method_case_results.csv",
+      "role": "table_artifact:method_case_results",
+      "sha256": "f10872012b15a96aab9a3f826cbd636468cf8c3d1010f203c353468bde51fc54",
+      "size_bytes": 183850
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/method_summary.csv",
+      "role": "table_artifact:method_summary",
+      "sha256": "e5bd49d447d36f3e78de576bcf3397e5d17b80380c4a19bbd26e87564e616372",
+      "size_bytes": 4610
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/paired_method_summary.csv",
+      "role": "table_artifact:paired_method_summary",
+      "sha256": "78d74c44b7fbfcf1215302d10ca222cd8b2c06c2431d75eaa1d86e1661916ab9",
+      "size_bytes": 1985
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/modewise_results.csv",
+      "role": "table_artifact:modewise_results",
+      "sha256": "1513dc0b5bd8e6530af755f41d069178652d9f96e40869c9c83e3e9121e99505",
+      "size_bytes": 584808
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/modewise_summary.csv",
+      "role": "table_artifact:modewise_summary",
+      "sha256": "2d10097c09ecf3ebe6f82430314d90b23364a56125943925be045c444f200c14",
+      "size_bytes": 30046
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/loo_interpolation_results.csv",
+      "role": "table_artifact:loo_results",
+      "sha256": "32279a855d5d6c95573926f313c589a584d5d542832bf8cea2bae8d6df557d02",
+      "size_bytes": 49297
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/loo_interpolation_summary.csv",
+      "role": "table_artifact:loo_summary",
+      "sha256": "f04cf97a8deba98bfed2b85b564b988c7252d2bfe34d39174e06d0f7d70a141d",
+      "size_bytes": 865
+    },
+    {
+      "relative_path": "results/tables/coefficient_baselines/validation_audit.csv",
+      "role": "table_artifact:validation_audit",
+      "sha256": "d6bb693ea6cdbbbc8ebb8f174955fd44a405ab0f2321317a7c0933913ebb6d28",
+      "size_bytes": 381
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/external_method_error.pdf",
+      "role": "figure_artifact:external_method_error:pdf",
+      "sha256": "54b76f48fab4e04f16b6ac4993c599afe50dac25813cb5f68737aa23c0a85433",
+      "size_bytes": 21074
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/external_method_error.png",
+      "role": "figure_artifact:external_method_error:png",
+      "sha256": "6d5cd2da6f768595e6da2162c100c1b5b70aa7797724c2cfbec92732055ffacd",
+      "size_bytes": 320391
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/external_modewise_error.pdf",
+      "role": "figure_artifact:external_modewise_error:pdf",
+      "sha256": "dfaaccd24edc1cf316a6e44b973e1ea83ba5912cba715eb1d66b5a99ea8a874f",
+      "size_bytes": 21471
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/external_modewise_error.png",
+      "role": "figure_artifact:external_modewise_error:png",
+      "sha256": "9d99f49db8493126552a518618204ee2cdedda8953e69639f5e34061e4dcb28a",
+      "size_bytes": 359137
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/loo_interpolation_validation.pdf",
+      "role": "figure_artifact:loo_validation:pdf",
+      "sha256": "b118550c257499d972d435826eae6273a163326a6c7d89952b50cbf73ae3dd69",
+      "size_bytes": 15048
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/loo_interpolation_validation.png",
+      "role": "figure_artifact:loo_validation:png",
+      "sha256": "26782c237c82ba8db7e8d310a3455b00c8e0b41b7bf31ab9353c4598cf220789",
+      "size_bytes": 115114
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/external_physical_diagnostics.pdf",
+      "role": "figure_artifact:external_physical_diagnostics:pdf",
+      "sha256": "bfcef167cb1db0a6ecbcc9530b7a43b007e3bb6cee524563d87aefbab3eb20d4",
+      "size_bytes": 20709
+    },
+    {
+      "relative_path": "results/figures/coefficient_baselines/external_physical_diagnostics.png",
+      "role": "figure_artifact:external_physical_diagnostics:png",
+      "sha256": "db70fa744a06bdcef2cef62b57d7bbdc7b880779721395708c4ad9cb60e68ffe",
+      "size_bytes": 306771
+    }
+  ],
+  "schema_version": 1,
+  "scientific_checks": {
+    "all_validation_checks_passed": true,
+    "external_cases_used_for_interpolation": false,
+    "external_cases_used_for_selection": false,
+    "maximum_frozen_case_reproduction_difference": 2.220446049250313e-16,
+    "maximum_loo_pythagorean_residual": 1.1221492485224971e-17,
+    "maximum_main_pythagorean_residual": 9.2970336290632e-18,
+    "raw_dem_files_accessed": false
+  },
+  "scope": {
+    "basis_scope": "fixed Notebook 14 bases constructed from the complete 100-field training collection",
+    "external_comparison": "retrospective",
+    "raw_external_coarse_grained_files_hashed": false,
+    "raw_particle_files_hashed": false
+  }
+}
