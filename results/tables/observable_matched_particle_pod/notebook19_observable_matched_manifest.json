@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "manifest_type": "Notebook 19 observable-matched particle POD and row-continuity audit",
+  "hash_algorithm": "SHA-256",
+  "recorded_file_count": 14,
+  "records": [
+    {
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_route_order_manifest.json",
+      "role": "trusted_input",
+      "size_bytes": 5465,
+      "sha256": "f093f7de958f5fcd6860ebcfee8416af27aa01d4b1c8ed1488e05d7fb8e9e844"
+    },
+    {
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_particle_representation_sensitivity_manifest.json",
+      "role": "trusted_input",
+      "size_bytes": 5113,
+      "sha256": "389bb1a53975fe098c7da908b5886adfb42f13237f6c6464b3c170f7b6d0cfce"
+    },
+    {
+      "relative_path": "results/tables/observable_matched_particle_pod/small_only_pod_sweep.csv",
+      "role": "table_artifact",
+      "size_bytes": 5248,
+      "sha256": "0ae5050be004814cf563f4df4287c78a2c4cbceb62926bcf58b03461f041c24a"
+    },
+    {
+      "relative_path": "results/tables/observable_matched_particle_pod/rank100_comparison.csv",
+      "role": "table_artifact",
+      "size_bytes": 830,
+      "sha256": "07f7368af131ad810590c4e1ae8d04601ab697914366ea35d7e2251a5e6d0ccd"
+    },
+    {
+      "relative_path": "results/tables/observable_matched_particle_pod/row_continuity_summary.csv",
+      "role": "table_artifact",
+      "size_bytes": 2611,
+      "sha256": "d05badd8c9c73ad6d1fb9d533385b0d6870fefc1d1a76b4930ec581ea6d29631"
+    },
+    {
+      "relative_path": "results/tables/observable_matched_particle_pod/operator_regression.csv",
+      "role": "table_artifact",
+      "size_bytes": 262,
+      "sha256": "54d009751ea05d56999bb3381f3c2ffe916fb49e334d0abaf4589dd750a345c6"
+    },
+    {
+      "relative_path": "results/tables/observable_matched_particle_pod/pilot_radius_audit.csv",
+      "role": "table_artifact",
+      "size_bytes": 321,
+      "sha256": "9890330135db5cb14e49ae9dfcd1cdb33c631bb398bd2bee57b265033c8d6a10"
+    },
+    {
+      "relative_path": "results/figures/observable_matched_particle_pod/small_only_vs_all_particle_xz_rank100.pdf",
+      "role": "figure_artifact",
+      "size_bytes": 18418,
+      "sha256": "9013cb1f3a4296d283a28ee0f3841182fcab01b7210771c46c9a07737017e2ed"
+    },
+    {
+      "relative_path": "results/figures/observable_matched_particle_pod/small_only_vs_all_particle_xz_rank100.png",
+      "role": "figure_artifact",
+      "size_bytes": 40577,
+      "sha256": "3424410b336b1ec0c2afde2d8bf6f3061645de08bcf0058c873193b1e1b8d80a"
+    },
+    {
+      "relative_path": "results/figures/observable_matched_particle_pod/small_only_pod_rank_sweep.pdf",
+      "role": "figure_artifact",
+      "size_bytes": 21440,
+      "sha256": "d27ee133518b6367547b9fdec04dfd9c80b1b80ed57953980f8b115f81ca31c3"
+    },
+    {
+      "relative_path": "results/figures/observable_matched_particle_pod/small_only_pod_rank_sweep.png",
+      "role": "figure_artifact",
+      "size_bytes": 39831,
+      "sha256": "02ec62f4c15d6cbc9977fa3b61579ee7e29f3b464f98f6c8834331470607dc0e"
+    },
+    {
+      "relative_path": "results/figures/observable_matched_particle_pod/row_continuity_diagnostic.pdf",
+      "role": "figure_artifact",
+      "size_bytes": 16955,
+      "sha256": "5c2c01315dc98f2e0cee24a0869f5de8644a528ef76f7480ae6cbdb9e22b6b68"
+    },
+    {
+      "relative_path": "results/figures/observable_matched_particle_pod/row_continuity_diagnostic.png",
+      "role": "figure_artifact",
+      "size_bytes": 36148,
+      "sha256": "528ed614da3512cbed14ffa4316e5da3cf4215ee9ad36cffe5d41e98e82adf48"
+    },
+    {
+      "relative_path": "notebooks/19_observable_matched_particle_pod_and_identity_audit.ipynb",
+      "role": "notebook",
+      "size_bytes": 267566,
+      "sha256": "29964e4a08635751b24923eda9a8b78207f256db8d8ad13960a8b3e6285edbd5"
+    }
+  ],
+  "scope": {
+    "raw_dem_files_accessed": false,
+    "external_cases_included": false,
+    "numerical_particle_arrays_loaded": true,
+    "files_written": true,
+    "manifest_self_hash_excluded": true
+  },
+  "frozen_protocol": {
+    "case_count": 5,
+    "ranks": [
+      0,
+      8,
+      14,
+      27,
+      100
+    ],
+    "training_snapshot_count": 101,
+    "validation_snapshot_count": 99,
+    "grid_shape": [
+      100,
+      100
+    ],
+    "lucy_cutoff": 3.0,
+    "axial_averaging_length": 10.0,
+    "small_species": 1,
+    "row_continuity_interval_count": 200
+  },
+  "key_findings": {
+    "pilot_rank100_small_only_error_percent": 93.30159094696675,
+    "pilot_rank100_all_particle_xz_error_percent": 92.6873198150537,
+    "minimum_row_nearest_fraction": 0.014475205019538775,
+    "mean_row_nearest_fraction": 0.041861618017221616
+  }
+}

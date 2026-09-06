@@ -1,0 +1,4 @@
+snapshot_index,snapshot_time,maximum_absolute_difference,relative_l2_difference,minimum_field_value,maximum_field_value
+0,1378.133363,0.0,0.0,0.0,0.35102581816297374
+100,1550.184969,0.0,0.0,0.0,0.35250906627978423
+199,1720.516059,0.0,0.0,0.0,0.37436814905329296
