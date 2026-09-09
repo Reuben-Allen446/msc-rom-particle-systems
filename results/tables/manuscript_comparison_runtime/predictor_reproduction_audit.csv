@@ -1,0 +1,7 @@
+model,rank,method,mean_error_difference_percent,median_error_difference_percent,maximum_error_difference_percent
+validation_selected_rank,6,frozen_nn,2.220446049250313e-16,0.0,0.0
+validation_selected_rank,6,piecewise_linear,0.0,0.0,4.440892098500626e-16
+validation_selected_rank,6,pchip,1.1102230246251565e-16,0.0,2.220446049250313e-16
+paper_rank15,15,frozen_nn,2.220446049250313e-16,1.1102230246251565e-16,0.0
+paper_rank15,15,piecewise_linear,1.1102230246251565e-16,1.1102230246251565e-16,2.220446049250313e-16
+paper_rank15,15,pchip,0.0,0.0,4.440892098500626e-16

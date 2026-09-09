@@ -1,0 +1,8 @@
+claim_id,manuscript_claim,manuscript_location,status_before_n20,planned_evidence
+M1,"Homogenised particle snapshots exhibit rapidly decaying low-rank structure, with rank 15 selected near the error plateau.",Sections 6.1–6.2,directly testable,"Notebook 14 spectrum, rank and projection diagnostics"
+M2,Neural-network prediction error stabilises at approximately 1 percent once the principal modes are retained.,Section 6.2,directly testable,Notebook 14 independent external errors
+M3,The prediction plateau is comparable with finite-duration temporal variability in the homogenised data.,Section 6.3,qualified test,Notebook 15 duration-matched empirical variability comparison
+M4,An online surrogate evaluation takes well below one second.,Sections 6.4 and 7,requires timing,Repeated warm single-query timing of coefficient prediction and field reconstruction
+M5,The surrogate reduces a roughly three-day DEM calculation to seconds.,Sections 6.4 and 7,partially testable,Measure the surrogate side only; retain the DEM duration as a manuscript-reported value
+M6,The surrogate captures the variation of segregation with particle-size ratio.,Section 6.4,partial observable match,Available small-species volume-fraction test fields; no independent recreation of the manuscript mixing index
+M7,Homogenisation enables a more efficient low-rank representation than direct particle-coordinate reduction.,Introduction and Sections 3–4,tested representation only,"Notebooks 12, 13 and 19 continuum-first versus labelled-coordinate results"

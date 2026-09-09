@@ -1,0 +1,13 @@
+model,rank,method,operation,warmup_calls,timing_blocks,calls_per_block,total_timed_calls,minimum_time_per_query_ms,median_time_per_query_ms,p95_time_per_query_ms,maximum_time_per_query_ms
+paper_rank15,15,frozen_nn,coefficient_prediction,50,25,40,1000,0.088754175,0.10314559999999999,0.13338288499999998,0.15024105000000001
+paper_rank15,15,frozen_nn,full_field_prediction,50,25,40,1000,0.155870025,0.174752875,0.23291939499999997,0.2571396
+paper_rank15,15,pchip,coefficient_prediction,50,25,40,1000,0.02199375,0.0296599,0.033313295,0.040229925
+paper_rank15,15,pchip,full_field_prediction,50,25,40,1000,0.084983525,0.0922099,0.10998029499999999,0.11954605
+paper_rank15,15,piecewise_linear,coefficient_prediction,50,25,40,1000,0.05443485,0.061435275,0.08486190499999999,0.089466925
+paper_rank15,15,piecewise_linear,full_field_prediction,50,25,40,1000,0.11117002499999999,0.11988257499999999,0.15424534999999995,0.17081342500000002
+validation_selected_rank,6,frozen_nn,coefficient_prediction,50,25,40,1000,0.09176095,0.101600775,0.13043891499999996,0.13415805
+validation_selected_rank,6,frozen_nn,full_field_prediction,50,25,40,1000,0.1318677,0.147665225,0.17051916999999994,0.21026867500000002
+validation_selected_rank,6,pchip,coefficient_prediction,50,25,40,1000,0.026547300000000003,0.0310958,0.06444122,0.07341777499999999
+validation_selected_rank,6,pchip,full_field_prediction,50,25,40,1000,0.0647691,0.07216025000000001,0.09033912499999999,0.0991524
+validation_selected_rank,6,piecewise_linear,coefficient_prediction,50,25,40,1000,0.045991199999999996,0.060433400000000005,0.09126650999999998,0.125210425
+validation_selected_rank,6,piecewise_linear,full_field_prediction,50,25,40,1000,0.093541475,0.100898775,0.11848843999999996,0.154244775

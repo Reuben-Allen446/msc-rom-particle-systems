@@ -1,0 +1,2 @@
+manuscript_reported_dem_seconds,measured_rank15_warm_median_ms,measured_rank15_warm_p95_ms,warm_p95_below_one_second,dem_runtime_provenance,independent_end_to_end_speedup
+259200.0,0.174752875,0.23291939499999997,True,Manuscript-reported; not independently timed,False

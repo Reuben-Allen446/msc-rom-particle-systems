@@ -1,0 +1,8 @@
+claim_id,assessment,numerical_evidence,scope
+M1,corroborated,Rank 15 tail 0.298125%; captured energy 99.999111%.,Small-species XZ volume-fraction observable.
+M2,corroborated,Rank-15 external mean error 0.859868%; rank 4–20 spread 0.018462 percentage points.,"Independent architecture-faithful reconstruction, not original author code."
+M3,partially corroborated,Rank-15 ratio of mean field error to field variability 0.923686; coefficient-to-modal-variability ratio 1.364559.,"Empirical duration-matched scale comparison, not a formal uncertainty bound or causal error floor."
+M4,corroborated for warm field prediction,Rank-15 frozen-NN median 0.174753 ms; p95 0.232919 ms.,"Loaded model, single parameter, coefficient prediction plus complete 100x100 field reconstruction."
+M5,not independently verified,The surrogate denominator is measured; the approximately three-day DEM numerator is taken from the manuscript.,No new DEM run and no matched end-to-end timing experiment.
+M6,not directly tested,"Ten external small-species field predictions were tested, but the manuscript mixing index was not independently reconstructed.",Field-prediction accuracy must not be reported as mixing-index reproduction.
+M7,corroborated for tested representations,"Mean rank-100 errors: continuum 6.433%, labelled XYZ 122.122%, labelled XZ 118.648%, small-only labelled XZ 131.079%.",Five cases and the specified labelled-coordinate POD constructions; persistent identity was not established.

@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "notebook": "20_manuscript_comparison_and_runtime_validation.ipynb",
+  "created_at_utc": "2026-09-09T15:44:06.179530+00:00",
+  "protocol_frozen_at_utc": "2026-09-09T15:43:38.891238+00:00",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "torch": "2.2.2",
+    "matplotlib": "3.11.0"
+  },
+  "source_manifest_hashes": {
+    "notebook_12": "f093f7de958f5fcd6860ebcfee8416af27aa01d4b1c8ed1488e05d7fb8e9e844",
+    "notebook_13": "389bb1a53975fe098c7da908b5886adfb42f13237f6c6464b3c170f7b6d0cfce",
+    "notebook_14": "f15744e23b1bfc3898750a1e2fb2504a2d3ca9c6c96c714188a4094d0357604f",
+    "notebook_18": "6aba1fbde7b179f9cbc242e8490034e9271b770745c3361c98cb209599868556",
+    "notebook_19": "34516a68749b805a1152d7e5fd1920f59f84ed7a2d68ce1fe09e72dbed927403"
+  },
+  "input_count": 22,
+  "inputs": [
+    {
+      "input_role": "n12_rank100_summary",
+      "relative_path": "results/tables/multi_parameter_route_order/multi_parameter_rank_100_summary.csv",
+      "size_bytes": 2347,
+      "sha256": "f14d3cd24d46d5edde5bd16ce54473b1ed858ded7329bdfc84b144320178a3b3",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n13_xz_rank100_summary",
+      "relative_path": "results/tables/xz_particle_representation_sensitivity/xz_rank_100_summary.csv",
+      "size_bytes": 1860,
+      "sha256": "9696977702c5299dcb57237881f0fa5e939a70fecc5844a3eb4eba3a3293e905",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_tail_diagnostics",
+      "relative_path": "results/tables/exact_paper_method_reproduction/centred_uncentred_tail_diagnostics.csv",
+      "size_bytes": 2152,
+      "sha256": "bb4fc1019fe7877658f8e6f309f8c39c33d3a6b874fb04ca4ce0ab1227f7e430",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_rank_criteria",
+      "relative_path": "results/tables/exact_paper_method_reproduction/relative_tail_rank_criteria.csv",
+      "size_bytes": 283,
+      "sha256": "09d2e4106eceaba502430081d5b0170d1c09e3c62682be86f2e000744dffa2d7",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_training_sweep",
+      "relative_path": "results/tables/exact_paper_method_reproduction/paper_rank_training_external_errors.csv",
+      "size_bytes": 3154,
+      "sha256": "92555176327f0d65d1d13f78c88d150ff701f74dc7cd72761c3ddcd3e85ca4a0",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_selected_models",
+      "relative_path": "results/tables/exact_paper_method_reproduction/paper_rank_training_selected_models.csv",
+      "size_bytes": 2619,
+      "sha256": "2b00575f85373755d66a220d30d91908029007056c34eddc4fe424d31b367367",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_final_summary",
+      "relative_path": "results/tables/exact_paper_method_reproduction/final_continuum_rom_comparison.csv",
+      "size_bytes": 1022,
+      "sha256": "5ed41a23ddd2a10de7f9526f595ee72e3019a5c7eeb76f29c624a50f1a55d30c",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_final_cases",
+      "relative_path": "results/tables/exact_paper_method_reproduction/final_continuum_rom_test_cases.csv",
+      "size_bytes": 1625,
+      "sha256": "7b8e495ed1b8197ef2033d9ed3d52d41e5d4ce7990828cd05353fa2d671fce31",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_dataset",
+      "relative_path": "data/processed/cg_phi_small_dataset.npz",
+      "size_bytes": 3411799,
+      "sha256": "6915b428fee927d6ed3beecc4b5947bad0eb4895ee2b59d5ddaa086b4af11e56",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_rank6_package",
+      "relative_path": "data/processed/cg_phi_validation_selected_rank_uncentred_raw.pt",
+      "size_bytes": 623748,
+      "sha256": "df716ccd732b88e67a73eec7873d33ba5efb9c9b5bc7ca30aec2fe99f1edacf7",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n14_rank15_package",
+      "relative_path": "data/processed/cg_phi_paper_rank15_uncentred_raw.pt",
+      "size_bytes": 1554700,
+      "sha256": "571c12493edd5782859f617316badd4b58402b2b06a90e6d03fddccf6baea516",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n15_modewise_comparison",
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_modewise_rom_uncertainty_comparison.csv",
+      "size_bytes": 247049,
+      "sha256": "7e6b59098e65a6c8cf281c2e4ad20b0fff99183960e81f7ca56992f8e32b227e",
+      "upstream_hash_available": false,
+      "upstream_hash_match": null
+    },
+    {
+      "input_role": "n15_rom_decomposition",
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_rom_error_decomposition.csv",
+      "size_bytes": 36803,
+      "sha256": "e9d672be3d3cd0e99d644c73aa4c58645dbe252c2a7a68efeddbf7a5a11858a2",
+      "upstream_hash_available": false,
+      "upstream_hash_match": null
+    },
+    {
+      "input_role": "n15_duration_scaling",
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/variable_duration_scaling_summary.csv",
+      "size_bytes": 1955,
+      "sha256": "ce20e95ba5f2af6d7569c7605976503f62bc351c7debdc27cfadd34eca564ec0",
+      "upstream_hash_available": false,
+      "upstream_hash_match": null
+    },
+    {
+      "input_role": "n15_validation_checks",
+      "relative_path": "results/tables/statistical_uncertainty_accuracy_floor/stage4_validation_checks.csv",
+      "size_bytes": 1975,
+      "sha256": "b846d8dcb500c4c6198f3e00a62401597f4494ed381fa316486729449c11fdbe",
+      "upstream_hash_available": false,
+      "upstream_hash_match": null
+    },
+    {
+      "input_role": "n18_method_summary",
+      "relative_path": "results/tables/coefficient_baselines/method_summary.csv",
+      "size_bytes": 4610,
+      "sha256": "e5bd49d447d36f3e78de576bcf3397e5d17b80380c4a19bbd26e87564e616372",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n18_paired_summary",
+      "relative_path": "results/tables/coefficient_baselines/paired_method_summary.csv",
+      "size_bytes": 1985,
+      "sha256": "78d74c44b7fbfcf1215302d10ca222cd8b2c06c2431d75eaa1d86e1661916ab9",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n18_loo_summary",
+      "relative_path": "results/tables/coefficient_baselines/loo_interpolation_summary.csv",
+      "size_bytes": 865,
+      "sha256": "f04cf97a8deba98bfed2b85b564b988c7252d2bfe34d39174e06d0f7d70a141d",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n18_validation_audit",
+      "relative_path": "results/tables/coefficient_baselines/validation_audit.csv",
+      "size_bytes": 381,
+      "sha256": "d6bb693ea6cdbbbc8ebb8f174955fd44a405ab0f2321317a7c0933913ebb6d28",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n19_small_only_sweep",
+      "relative_path": "results/tables/observable_matched_particle_pod/small_only_pod_sweep.csv",
+      "size_bytes": 5248,
+      "sha256": "0ae5050be004814cf563f4df4287c78a2c4cbceb62926bcf58b03461f041c24a",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n19_rank100_comparison",
+      "relative_path": "results/tables/observable_matched_particle_pod/rank100_comparison.csv",
+      "size_bytes": 830,
+      "sha256": "07f7368af131ad810590c4e1ae8d04601ab697914366ea35d7e2251a5e6d0ccd",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    },
+    {
+      "input_role": "n19_row_continuity",
+      "relative_path": "results/tables/observable_matched_particle_pod/row_continuity_summary.csv",
+      "size_bytes": 2611,
+      "sha256": "d05badd8c9c73ad6d1fb9d533385b0d6870fefc1d1a76b4930ec581ea6d29631",
+      "upstream_hash_available": true,
+      "upstream_hash_match": true
+    }
+  ],
+  "timing_protocol": {
+    "cpu_only": true,
+    "warmup_calls": 50,
+    "timing_blocks": 25,
+    "calls_per_block": 40,
+    "total_timed_calls_per_configuration": 1000,
+    "single_parameter_query": true,
+    "model_loading_included": false,
+    "offline_construction_included": false,
+    "disk_io_included": false,
+    "thread_configuration_during_timing": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libopenblas",
+        "version": "0.3.23.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "version": null,
+        "threading_layer": null,
+        "architecture": null
+      }
+    ]
+  },
+  "rank15_warm_full_field_result": {
+    "median_time_per_query_ms": 0.174752875,
+    "p95_time_per_query_ms": 0.23291939499999997,
+    "p95_below_one_second": true
+  },
+  "scope": {
+    "raw_dem_files_accessed": false,
+    "external_test_used_for_selection": false,
+    "original_manuscript_code_executed": false,
+    "new_dem_simulation_executed": false,
+    "dem_runtime_independently_timed": false,
+    "end_to_end_speedup_established": false,
+    "manuscript_mixing_index_recreated": false,
+    "particle_identity_established": false,
+    "particle_comparison_scope": "tested labelled-coordinate POD representations only"
+  },
+  "manuscript_evidence": [
+    {
+      "claim_id": "M1",
+      "assessment": "corroborated",
+      "numerical_evidence": "Rank 15 tail 0.298125%; captured energy 99.999111%.",
+      "scope": "Small-species XZ volume-fraction observable."
+    },
+    {
+      "claim_id": "M2",
+      "assessment": "corroborated",
+      "numerical_evidence": "Rank-15 external mean error 0.859868%; rank 4\u201320 spread 0.018462 percentage points.",
+      "scope": "Independent architecture-faithful reconstruction, not original author code."
+    },
+    {
+      "claim_id": "M3",
+      "assessment": "partially corroborated",
+      "numerical_evidence": "Rank-15 ratio of mean field error to field variability 0.923686; coefficient-to-modal-variability ratio 1.364559.",
+      "scope": "Empirical duration-matched scale comparison, not a formal uncertainty bound or causal error floor."
+    },
+    {
+      "claim_id": "M4",
+      "assessment": "corroborated for warm field prediction",
+      "numerical_evidence": "Rank-15 frozen-NN median 0.174753 ms; p95 0.232919 ms.",
+      "scope": "Loaded model, single parameter, coefficient prediction plus complete 100x100 field reconstruction."
+    },
+    {
+      "claim_id": "M5",
+      "assessment": "not independently verified",
+      "numerical_evidence": "The surrogate denominator is measured; the approximately three-day DEM numerator is taken from the manuscript.",
+      "scope": "No new DEM run and no matched end-to-end timing experiment."
+    },
+    {
+      "claim_id": "M6",
+      "assessment": "not directly tested",
+      "numerical_evidence": "Ten external small-species field predictions were tested, but the manuscript mixing index was not independently reconstructed.",
+      "scope": "Field-prediction accuracy must not be reported as mixing-index reproduction."
+    },
+    {
+      "claim_id": "M7",
+      "assessment": "corroborated for tested representations",
+      "numerical_evidence": "Mean rank-100 errors: continuum 6.433%, labelled XYZ 122.122%, labelled XZ 118.648%, small-only labelled XZ 131.079%.",
+      "scope": "Five cases and the specified labelled-coordinate POD constructions; persistent identity was not established."
+    }
+  ],
+  "table_count": 19,
+  "figure_count": 8,
+  "recorded_artifact_count": 27,
+  "artifacts": [
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/external_method_timing.pdf",
+      "size_bytes": 19694,
+      "sha256": "fdcf1217dccb9748af08bdf5581d0c662c43896ee8c72391a2d21121b972cafe"
+    },
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/external_method_timing.png",
+      "size_bytes": 107732,
+      "sha256": "436a6332f1078459a2d1f15aea6745b131c6ea040e7d34cb418e8e68c6b5c2dc"
+    },
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/manuscript_rank_error_plateau.pdf",
+      "size_bytes": 18286,
+      "sha256": "2b81a37bc38d0a23fb409dbafece7d90d87bfb1974b6449597c5ba30337deffb"
+    },
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/manuscript_rank_error_plateau.png",
+      "size_bytes": 126083,
+      "sha256": "feaf95406a47636ab7f5d2f551a49fe35819e0cc68bb185f83815bf9f781af95"
+    },
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/modewise_variability_comparison.pdf",
+      "size_bytes": 19784,
+      "sha256": "62b959e72ff576395b50cc8d6ef72bb578bde4857c8a19a5fceb2161db219565"
+    },
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/modewise_variability_comparison.png",
+      "size_bytes": 194138,
+      "sha256": "1ea048a97c9e7511d6b08e76c98049fd0e53d275853ad2bcd4ea7a7e2d52863a"
+    },
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/representation_route_comparison.pdf",
+      "size_bytes": 19855,
+      "sha256": "7efab70843a7b817228e669d31fa2e9eade2b119b0e8b3932c36a9fb18d1cda1"
+    },
+    {
+      "relative_path": "results/figures/manuscript_comparison_runtime/representation_route_comparison.png",
+      "size_bytes": 134086,
+      "sha256": "e7002d1d8db7f283342f85b727262bc5e7663f7039ea5e8afe4a2e876b25d44e"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/contextual_runtime_comparison.csv",
+      "size_bytes": 268,
+      "sha256": "1a1304d69b59dfd549a7a2a5f572302e0dac431a3d096c64c73226c8671195b3"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/continuum_manuscript_comparison.csv",
+      "size_bytes": 632,
+      "sha256": "09807420f3b271d134326d8a5f9e7d74e500b4271280ce6845a7e373543d390e"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/external_baseline_comparison.csv",
+      "size_bytes": 1232,
+      "sha256": "7faf901804d73fae9c653fc7c07f4959ad3bb759fa06bb8d2950099823d3f154"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/input_audit.csv",
+      "size_bytes": 4260,
+      "sha256": "41b53d8cfe297565873fd1fcb189c88d87c8d29c31b257c1e8fae0621d030b8a"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/input_schema_audit.csv",
+      "size_bytes": 6127,
+      "sha256": "c6440ca3f68504420bdcb651bf642aae57c7e116f7998243ed98a7b62530bc6e"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/manuscript_claim_register.csv",
+      "size_bytes": 1535,
+      "sha256": "57d0fa2351f60bd103c8a54dc9fc0215ab496a92a0671bced54b46ae9554eda0"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/manuscript_evidence.csv",
+      "size_bytes": 1479,
+      "sha256": "9b74709fdef8c251fbd0d371a03d0f587a34545e420556b6be23ecbbc798532d"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/model_audit.csv",
+      "size_bytes": 214,
+      "sha256": "b1856d1ae01254e4f02befe44d87e514e69b0fe708878b10e31456f12d4f4aa2"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/predictor_reproduction_audit.csv",
+      "size_bytes": 564,
+      "sha256": "dc825fbffcde49ef96bbfa8e333eca0de8b8b52a576290714cb075b1d0f8253b"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/rank15_external_error_by_ratio.csv",
+      "size_bytes": 409,
+      "sha256": "cf7e9619e17b44026057872bf695bab0dc77996f04e789eca473ed53ca349fb6"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/rank15_modewise_comparison.csv",
+      "size_bytes": 1472,
+      "sha256": "288a03c57e5ddce4666dac4774713292e0e042b793a12a1902a1d9b1c1648665"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/rank_training_view.csv",
+      "size_bytes": 1012,
+      "sha256": "8da822214b01ea77979314690658c4434884e29d9f34ee3b5cff84b1a503a080"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/representation_case_comparison.csv",
+      "size_bytes": 1391,
+      "sha256": "f3353de632ccd1d0a3e76b8355a2c88380ca5d7a24649b8b6e9d7239b27a0b5f"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/representation_summary.csv",
+      "size_bytes": 432,
+      "sha256": "d3381721acd30c18742370c6dc508788769779e00ce196317258e4b7d28a7872"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/row_continuity_summary.csv",
+      "size_bytes": 152,
+      "sha256": "b9c7dbf444a306e96e60206f64387e1a7e8a28d3f1d0d88bdf3c82c3ed07ba49"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/timing_raw.csv",
+      "size_bytes": 22420,
+      "sha256": "e54e9dac11c059c26c7ceccd0009218e0ab234b235dd499a14adb1fe526ce9bd"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/timing_summary.csv",
+      "size_bytes": 1743,
+      "sha256": "3a83238f18084b222a330b1241d3d00dccb7d356f9aadfd151dec75627ca2f55"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/upstream_manifest_audit.csv",
+      "size_bytes": 905,
+      "sha256": "c6a07c08eac2fcefb5096c42050f88c4f686a3412b1914dfb0cc83214f4e1d35"
+    },
+    {
+      "relative_path": "results/tables/manuscript_comparison_runtime/variability_comparison.csv",
+      "size_bytes": 802,
+      "sha256": "05c4cf6ed45b0296f51572f6adba97ccbf1d3ab16e47b4e2888ab099aaa6e25e"
+    }
+  ],
+  "hash_scope_note": "The manifest and notebook are excluded from the artifact records to avoid self-reference and save-induced notebook hash changes."
+}
